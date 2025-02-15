@@ -4,25 +4,34 @@ gsap.registerPlugin(useGSAP);
 
 export default function Hero() {
   const container = useRef(null);
-  useGSAP(() => {
-    const t1 = gsap.timeline({ ease: "power1.inOut", delay: 1 });
-    const t2 = gsap.timeline({ ease: "power1.inOut", delay: 1 });
-  
-    // Animate light_left
-    t1.fromTo(".light_left", { filter: "brightness(0.1)" }, { filter: "brightness(0.3)", duration: 1 })
-      .to(".light_left", { filter: "brightness(0.5)", duration: 1 })
-      .to(".light_left", { filter: "brightness(1)", duration: 1 });
-  
-    // Animate light_right (parallel)
-    t2.fromTo(".light_right", { filter: "brightness(0.1)" }, { filter: "brightness(0.3)", duration: 1 })
-      .to(".light_right", { filter: "brightness(0.5)", duration: 1 })
-      .to(".light_right", { filter: "brightness(1)", duration: 1 });
-  }, { scope: container });
+  useGSAP(
+    () => {
+      const t1 = gsap.timeline({ ease: "power1.inOut", delay: 1 });
+      const t2 = gsap.timeline({ ease: "power1.inOut", delay: 1 });
+
+      t1.fromTo(
+        ".light_left",
+        { filter: "brightness(0.1)" },
+        { filter: "brightness(0.3)", duration: 1 }
+      )
+        .to(".light_left", { filter: "brightness(0.5)", duration: 1 })
+        .to(".light_left", { filter: "brightness(1)", duration: 1 });
+
+      t2.fromTo(
+        ".light_right",
+        { filter: "brightness(0.1)" },
+        { filter: "brightness(0.3)", duration: 1 }
+      )
+        .to(".light_right", { filter: "brightness(0.5)", duration: 1 })
+        .to(".light_right", { filter: "brightness(1)", duration: 1 });
+    },
+    { scope: container }
+  );
 
   return (
     <section className=" relative h-[88vh]">
       <div
-        className="h-full flex flex-col items-center pt-20 gap-5"
+        className="h-full flex flex-col items-center pt-32 gap-5"
         ref={container}
       >
         <div>
