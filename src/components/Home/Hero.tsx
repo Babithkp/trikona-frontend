@@ -6,21 +6,21 @@ export default function Hero() {
   const container = useRef(null);
   useGSAP(
     () => {
-      const t1 = gsap.timeline({ ease: "power1.inOut", delay: 1 });
-      const t2 = gsap.timeline({ ease: "power1.inOut", delay: 1 });
+      const t1 = gsap.timeline({ ease: "power1.inOut", delay: 2 });
+      const t2 = gsap.timeline({ ease: "power1.inOut", delay: 2 });
 
       t1.fromTo(
         ".light_left",
-        { filter: "brightness(0.1)" },
-        { filter: "brightness(0.3)", duration: 1 }
+        { filter: "brightness(0.1)"},
+        { filter: "brightness(0.3)", duration: 0.5 }
       )
         .to(".light_left", { filter: "brightness(0.5)", duration: 1 })
         .to(".light_left", { filter: "brightness(1)", duration: 1 });
 
       t2.fromTo(
         ".light_right",
-        { filter: "brightness(0.1)" },
-        { filter: "brightness(0.3)", duration: 1 }
+        { filter: "brightness(0.1)"},
+        { filter: "brightness(0.3)", duration: 0.5 }
       )
         .to(".light_right", { filter: "brightness(0.5)", duration: 1 })
         .to(".light_right", { filter: "brightness(1)", duration: 1 });
