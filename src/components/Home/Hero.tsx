@@ -34,7 +34,7 @@ export default function Hero() {
         className="h-full flex flex-col items-center pt-32 gap-5"
         ref={container}
       >
-        <div>
+        <div className="flex gap-5 flex-col">
           <h1 className="text-5xl font-semibold">
             Web Solutions That Make an Impact
           </h1>
