@@ -1,7 +1,7 @@
 import xixuSvg from "../../assets/uiux_svg.svg";
 import fontendSvg from "../../assets/Frontend_svg.svg";
-import backendSvg from "../../assets/backend.svg"
-import cloudSvg from "../../assets/Cloud_svg.svg"
+import backendSvg from "../../assets/backend.svg";
+import cloudSvg from "../../assets/Cloud_svg.svg";
 
 const services = [
   {
@@ -38,12 +38,11 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="relative flex w-full flex-wrap gap-20 px-20 py-20 justify-center">
-      <span className="grid_bg absolute left-0 top-0 size-full opacity-[0.3]"></span>
-      <span className="quote_bg_blend absolute left-0 top-0 size-full"></span>
+    <section className="relative flex w-full flex-wrap justify-center gap-20 px-20 py-20">
+      <span className="bg_blend absolute left-0 top-0 size-full"></span>
       {services.map((card, index) => (
         <div
-          className="relative flex h-[20rem] w-[24rem] flex-col items-center justify-evenly overflow-hidden rounded-2xl p-2 px-[2.5rem] text-center shadow-lg bg-black"
+          className="relative flex h-[20rem] w-[24rem] flex-col items-center justify-evenly overflow-hidden rounded-2xl bg-black p-2 px-[2.5rem] text-center shadow-lg"
           key={index}
         >
           <div className="">
@@ -53,7 +52,7 @@ export default function Services() {
 
           <p className="text-2xl font-semibold">{card.title}</p>
           <p className="text-secondary">{card.description}</p>
-          <span className="absolute left-1 top-0 size-full pt-[45rem] opacity-0 hover:bg-[radial-gradient(circle_at_center,_#FF6B1C_20%,_rgba(255,165,0,0)_60%)] transition-all duration-1000  hover:opacity-[0.6]"></span>
+          <span className="absolute left-1 top-0 size-full pt-[45rem] opacity-0 transition-all duration-500 hover:bg-[radial-gradient(circle_at_center,_#FF6B1C_20%,_rgba(255,165,0,0)_60%)] hover:opacity-[0.6]"></span>
         </div>
       ))}
     </section>

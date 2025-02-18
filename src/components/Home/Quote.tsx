@@ -23,7 +23,7 @@ export default function Quote() {
       ease: "power2.out",
       onUpdate: () => {
         if (textRef.current) {
-          textRef.current.style.backgroundImage = `radial-gradient(1700px circle at ${gradientPosition.current.x}px ${gradientPosition.current.y}px, #FF6B1C, #a1a9b3 2%, black 75%)`;
+          textRef.current.style.backgroundImage = `radial-gradient(1700px circle at ${gradientPosition.current.x}px ${gradientPosition.current.y}px, #FF6B1C 1%, #a1a9b3 2%, black 90%)`;
         }
       },
     });
@@ -38,8 +38,7 @@ export default function Quote() {
       >
         INNOVATE. ITERATE. ELEVATE
       </p>
-      <span className="grid_bg absolute left-0 top-0 size-full opacity-[0.3]"></span>
-      <span className="quote_bg_blend absolute left-0 top-0 size-full"></span>
+      <span className="bg_blend absolute left-0 top-0 size-full"></span>
     </section>
   );
 }

@@ -18,7 +18,8 @@ export const AppWithAnimation = () => {
   }, []);
 
   return (
-    <div ref={container}>
+    <div ref={container} className="relative">
+      <span className="grid_bg absolute left-0 top-0 size-full opacity-[0.3]"></span>
       <BrowserRouter>
         <Navbar />
         <App />
