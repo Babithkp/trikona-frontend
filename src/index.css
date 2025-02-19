@@ -33,3 +33,13 @@
 .card_bg {
     background-image: radial-gradient(circle at center, #FF6B1C 0%, rgba(255, 165, 0, 0) 78%);
 }
+
+.card {
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for transform */
+  }
+  
+  .away {
+    opacity: 0; /* Make cards "away" have opacity 0 */
+    transform: translateY(-120vh) rotate(-48deg); /* Initial away position */
+  }
+  

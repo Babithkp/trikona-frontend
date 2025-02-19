@@ -47,7 +47,7 @@ export default function Services() {
         >
           <div className="">
             <img src={card.icon} alt="uiuxdesign" className="size-[4rem]" />
-            <span className="card_bg absolute -top-[17rem] left-[2rem] size-[20rem] opacity-[0.7]"></span>
+            <span className="card_bg absolute -top-[17rem] left-[calc(50%-10rem)] size-[20rem] opacity-[0.7]"></span>
           </div>
 
           <p className="text-2xl font-semibold">{card.title}</p>
