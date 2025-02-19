@@ -18,7 +18,7 @@ export const AppWithAnimation = () => {
   }, []);
 
   return (
-    <div ref={container} className="relative">
+    <div ref={container} className="relative flex flex-col items-center ">
       <span className="grid_bg absolute left-0 top-0 size-full opacity-[0.3]"></span>
       <BrowserRouter>
         <Navbar />

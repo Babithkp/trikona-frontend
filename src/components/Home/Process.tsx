@@ -18,21 +18,21 @@ const transformations = [
   ],
   [
     "translate(-500px,-450px) scale(0.7)",
-    "translate(0px,0px) scale(1)",
+    "translate(0px,0px) scale(0.7)",
     "translate(500px,450px) scale(0.7)",
     "translate(550px,500px) scale(0.7)",
   ],
   [
     "translate(-500px,-450px) scale(0.7)",
     "translate(-450px,-400px) scale(0.7)",
-    "translate(0px,0px) scale(1)",
+    "translate(0px,0px) scale(0.7)",
     "translate(500px,450px) scale(0.7)",
   ],
   [
     "translate(-500px,-450px) scale(0.7)",
     "translate(-450px,-400px) scale(0.7)",
     "translate(-400px,-350px) scale(0.7)",
-    "translate(0px,0px) scale(1)",
+    "translate(0px,0px) scale(0.7)",
   ],
 ];
 
@@ -68,8 +68,9 @@ export default function Process() {
 
   return (
     <section className="relative flex h-[400vh] w-full">
+      <span className="bg_blend absolute left-0 top-0 size-full"></span>
       <div className="stack-area size-full">
-        <div className="sticky top-0 h-screen w-full">
+        <div className="sticky top-0 h-screen w-full overflow-hidden">
           <div className="card absolute left-[calc(50%-20rem)] top-[calc(50%-20rem)] flex size-[40rem] flex-col items-center justify-between overflow-hidden rounded-3xl bg-black py-20">
             <h4 className="relative text-3xl font-medium text-white">
               From Vision to Success

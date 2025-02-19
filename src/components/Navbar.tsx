@@ -1,7 +1,7 @@
 import logo from "../assets/logo.svg";
 export default function Navbar() {
   return (
-    <nav className="flex px-10 p-5 items-center justify-between relative">
+    <nav className="flex px-10 p-5 items-center justify-between relative w-full">
       <span className="bg_blend absolute left-0 top-0 size-full opacity-[0.5]"></span>
       <div className="flex items-center gap-10">
         <img src={logo} className="size-18" alt="logo" />

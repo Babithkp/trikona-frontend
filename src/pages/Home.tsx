@@ -5,7 +5,7 @@ import Services from "../components/Home/Services";
 
 export default function Home() {
   return (
-    <main>
+    <main className="max-w-[1500px]">
       <Hero />
       <Services />
       <Quote />
