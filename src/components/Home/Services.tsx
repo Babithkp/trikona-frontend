@@ -2,6 +2,7 @@ import xixuSvg from "../../assets/uiux_svg.svg";
 import fontendSvg from "../../assets/Frontend_svg.svg";
 import backendSvg from "../../assets/backend.svg";
 import cloudSvg from "../../assets/Cloud_svg.svg";
+import triangle from "../../assets/bluredTriangle.svg"
 
 const services = [
   {
@@ -51,8 +52,9 @@ export default function Services() {
           </div>
 
           <p className="text-2xl font-semibold">{card.title}</p>
-          <p className="text-secondary">{card.description}</p>
-          <span className="absolute left-1 top-0 size-full pt-[45rem] opacity-0 transition-all duration-500 hover:bg-[radial-gradient(circle_at_center,_#FF6B1C_20%,_rgba(255,165,0,0)_60%)] hover:opacity-[0.6]"></span>
+          <p className="text-secondary ">{card.description}</p>
+          {/* <span className="absolute left-1 top-0 size-full pt-[45rem] opacity-0 transition-all duration-500 hover:bg-[radial-gradient(circle_at_center,_#FF6B1C_20%,_rgba(255,165,0,0)_60%)] hover:opacity-[0.6]"></span> */}
+          <img src={triangle} className="absolute bottom-0 opacity-0  hover:opacity-[0.6] blur-xl transition-all duration-500" />
         </div>
       ))}
     </section>

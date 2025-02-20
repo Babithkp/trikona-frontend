@@ -30,13 +30,13 @@ export default function Hero() {
 
   return (
     <section className=" relative h-[88vh]">
-      <span className="bg_blend absolute left-0 top-0 size-full"></span>
+      <span className="bg_blend absolute left-0 top-0 size-full "></span>
 
       <div
-        className="h-full flex flex-col items-center pt-32 gap-5"
+        className="h-full flex flex-col items-center pt-32 gap-5 "
         ref={container}
       >
-        <div className="flex gap-5 flex-col">
+        <div className="flex gap-5 flex-col z-[1]" >
           <h1 className="text-5xl font-semibold">
             Web Solutions That Make an Impact
           </h1>
