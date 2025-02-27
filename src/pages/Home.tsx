@@ -1,3 +1,4 @@
+import ContactUs from "../components/Home/ContactUs";
 import Hero from "../components/Home/Hero";
 import Process from "../components/Home/Process";
 import Quote from "../components/Home/Quote";
@@ -10,6 +11,7 @@ export default function Home() {
       <Services />
       <Quote />
       <Process/>
+      <ContactUs/>
     </main>
   );
 }
