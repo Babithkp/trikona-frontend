@@ -5,6 +5,8 @@ import App from "./App.tsx";
 import Navbar from "./components/Navbar.tsx";
 import { BrowserRouter } from "react-router";
 import gsap from "gsap";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const AppWithAnimation = () => {
   const container = useRef<HTMLDivElement>(null);
@@ -13,7 +15,7 @@ export const AppWithAnimation = () => {
     gsap.fromTo(
       container.current,
       { opacity: 0 },
-      { opacity: 1, duration: 1.3 }
+      { opacity: 1, duration: 1.3 },
     );
   }, []);
 
@@ -21,6 +23,7 @@ export const AppWithAnimation = () => {
     <div ref={container} className="relative flex flex-col items-center ">
       <span className="grid_bg absolute left-0 top-0 size-full opacity-[0.3]"></span>
       <BrowserRouter>
+        <ToastContainer />
         <Navbar />
         <App />
       </BrowserRouter>
@@ -31,5 +34,5 @@ export const AppWithAnimation = () => {
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <AppWithAnimation />
-  </StrictMode>
+  </StrictMode>,
 );
