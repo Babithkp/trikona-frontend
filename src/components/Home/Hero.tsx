@@ -29,7 +29,7 @@ export default function Hero() {
   );
 
   return (
-    <section className=" relative h-[88vh]">
+    <section className=" relative h-[88vh] ">
       <span className="bg_blend absolute left-0 top-0 size-full "></span>
 
       <div
@@ -37,10 +37,10 @@ export default function Hero() {
         ref={container}
       >
         <div className="flex gap-5 flex-col z-[1]" >
-          <h1 className="text-5xl font-semibold">
+          <h1 className="text-5xl font-semibold max-md:text-4xl max-sm:text-2xl text-center">
             Web Solutions That Make an Impact
           </h1>
-          <p className="text-lg text-center text-slate-200">
+          <p className="text-lg text-center text-slate-200 max-md:text-base max-sm:text-xs">
             We design and develop high-performing websites tailored to your
             brand.
           </p>
@@ -49,7 +49,7 @@ export default function Hero() {
           <div className="h-[50%] flex justify-center w-[46%]">
             <div className="bg-gradient-to-r from-black from-[-20%] via-white to-black to-[120%] h-[1.2rem] w-full rounded-full "></div>
           </div>
-          <div className="light h-full w-full bg-white absolute top-0 left-0 flex blur-md">
+          <div className="light h-full w-full bg-white absolute top-0 left-0 flex blur-md ">
             <div className="light_left w-1/2 h-full "></div>
             <div className="light_right w-1/2 h-full "></div>
           </div>

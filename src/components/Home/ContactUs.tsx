@@ -48,10 +48,11 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="relative flex justify-between gap-10 px-40 py-20 text-white contactus" id="contactus">
+    <section className="relative flex justify-between gap-10 px-40 py-20 text-white max-lg:flex-col-reverse max-lg:px-10 contactus " id="contactus">
       <span className="bg_blend absolute left-0 top-0 size-full"></span>
+      
       <div className="flex flex-col gap-5">
-        <div className="rounded-lg border">
+        <div className="rounded-lg border max-lg:hidden">
           <PixelCard colors="#FF6B1C">
             <h3 className="absolute left-5 top-5 text-4xl font-bold">
               Contact Us
@@ -64,15 +65,15 @@ export default function ContactUs() {
         </div>
       </div>
       <div className="flex h-full w-full flex-col gap-2 rounded-lg border bg-black p-10 px-5 ">
-        <h3 className="text-3xl font-medium z-[1]">
+        <h3 className="text-3xl font-medium z-[1] max-lg:text-2xl">
           Have an Idea? Let’s Bring It to Life!
         </h3>
-        <p className="z-[1]">Drop us a message, and we’ll turn your vision into reality.</p>
+        <p className="z-[1] max-lg:text-sm">Drop us a message, and we’ll turn your vision into reality.</p>
         <form
           className="z-[1] flex flex-wrap justify-center gap-5"
           onSubmit={handleSubmit(onSubmit)}
         >
-          <div className="flex w-[48%] flex-col gap-2">
+          <div className="flex w-[48%] flex-col gap-2 max-lg:w-full">
             <label>First Name</label>
             <input
               placeholder="First Name"
@@ -83,7 +84,7 @@ export default function ContactUs() {
               <p className="text-red-500">First Name is required</p>
             )}
           </div>
-          <div className="flex w-[48%] flex-col gap-2">
+          <div className="flex w-[48%] flex-col gap-2 max-lg:w-full">
             <label>Last Name</label>
             <input
               placeholder="Last Name"
@@ -91,7 +92,7 @@ export default function ContactUs() {
               {...register("lastName")}
             />
           </div>
-          <div className="flex w-[48%] flex-col gap-2">
+          <div className="flex w-[48%] flex-col gap-2 max-lg:w-full">
             <label>Email ID</label>
             <input
               type="email"
@@ -103,7 +104,7 @@ export default function ContactUs() {
               <p className="text-red-500">Email ID is required</p>
             )}
           </div>
-          <div className="flex w-[48%] flex-col gap-2">
+          <div className="flex w-[48%] flex-col gap-2 max-lg:w-full">
             <label>Phone Number</label>
             <input
               placeholder="Phone Number"
@@ -124,6 +125,7 @@ export default function ContactUs() {
           </button>
         </form>
       </div>
+      <h2 className="text-white z-[1] text-4xl lg:hidden px-5">Contact Us</h2>
     </section>
   );
 }

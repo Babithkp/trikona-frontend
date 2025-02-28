@@ -69,16 +69,16 @@ export default function Process() {
   }, []);
 
   return (
-    <section className="relative flex h-[400vh] w-full">
+    <section className="relative flex h-[400vh] w-full" id="process">
       <span className="bg_blend absolute left-0 top-0 size-full"></span>
-      <div className="stack-area size-full">
+      <div className="stack-area size-full ">
         <div className="sticky top-0 h-screen w-full overflow-hidden">
-          <div className="card absolute left-[calc(50%-20rem)] top-[calc(50%-20rem)] flex size-[40rem] flex-col items-center justify-between overflow-hidden rounded-3xl bg-black pb-20 pt-10">
+          <div className="card absolute left-[calc(50%-20rem)] top-[calc(50%-20rem)] max-lg:top-[calc(50%-15rem)] max-lg:left-[calc(50%-15rem)] max-sm:top-[calc(50%-13rem)] max-sm:left-[calc(50%-13rem)]  flex size-[40rem] max-lg:size-[30rem] max-sm:size-[26rem] flex-col items-center justify-between overflow-hidden rounded-3xl bg-black pb-20 pt-10">
             <img src={ellipse} className="absolute top-0 z-[-1]" />
-            <h4 className="relative text-3xl font-medium text-white">
+            <h4 className="relative text-3xl font-medium text-white max-lg:text-2xl">
               From Vision to Success
             </h4>
-            <div className="flex flex-wrap items-center justify-center gap-2 text-7xl font-medium text-white">
+            <div className="flex flex-wrap items-center justify-center gap-2 text-7xl font-medium text-white max-lg:text-6xl">
               <p>From</p>
               <p>Idea</p>
               <img src={ideaSvg} className="size-[5rem]" />
@@ -90,47 +90,47 @@ export default function Process() {
             </p>
             <img src={triangle} className="absolute bottom-0 z-[-1]" />
           </div>
-          <div className="card absolute left-[calc(50%-20rem)] top-[calc(50%-20rem)] flex size-[40rem] flex-col items-center justify-between overflow-hidden rounded-3xl bg-black pb-20 pt-10">
+          <div className="card absolute left-[calc(50%-20rem)] top-[calc(50%-20rem)] max-lg:top-[calc(50%-15rem)] max-lg:left-[calc(50%-15rem)] max-sm:top-[calc(50%-13rem)] max-sm:left-[calc(50%-13rem)]  flex size-[40rem] max-lg:size-[30rem] max-sm:size-[26rem] flex-col items-center justify-between overflow-hidden rounded-3xl bg-black pb-20 pt-10">
             <img src={ellipse} className="absolute top-0 z-[-1]" />
             <img src={triangle} className="absolute bottom-0 z-[-1]" />
-            <h4 className="relative text-3xl font-medium text-white">
+            <h4 className="relative text-3xl font-medium text-white max-lg:text-2xl">
               Strategry & Design
             </h4>
-            <div className="flex flex-wrap items-center justify-center gap-2 text-7xl font-medium text-white">
+            <div className="flex flex-wrap items-center justify-center gap-2 text-7xl font-medium text-white max-lg:text-6xl">
               <p>Crafting the</p>
               <p>Vision</p>
               <img src={eyeSvg} className="size-[5rem]" />
             </div>
-            <p className="text-3xl font-medium text-white">
+            <p className="text-3xl font-medium text-white text-center">
               Design with purpose, build with vision.
             </p>
           </div>
-          <div className="card absolute left-[calc(50%-20rem)] top-[calc(50%-20rem)] flex size-[40rem] flex-col items-center justify-between overflow-hidden rounded-3xl bg-black pb-20 pt-10">
+          <div className="card absolute left-[calc(50%-20rem)] top-[calc(50%-20rem)] max-lg:top-[calc(50%-15rem)] max-lg:left-[calc(50%-15rem)] max-sm:top-[calc(50%-13rem)] max-sm:left-[calc(50%-13rem)]  flex size-[40rem] max-lg:size-[30rem] max-sm:size-[26rem] flex-col items-center justify-between overflow-hidden rounded-3xl bg-black pb-20 pt-10">
             <img src={ellipse} className="absolute top-0 z-[-1]" />
             <img src={triangle} className="absolute bottom-0 z-[-1]" />
-            <h4 className="relative text-3xl font-medium text-white">
+            <h4 className="relative text-3xl font-medium text-white max-lg:text-2xl">
               Development & Testing
             </h4>
-            <div className="flex flex-wrap items-center justify-center gap-2 text-7xl font-medium text-white">
+            <div className="flex flex-wrap items-center justify-center gap-2 text-7xl font-medium text-white max-lg:text-6xl">
               <p>Bringing</p>
               <p>Ideas</p>
               <p>to Life</p>
               <img src={logo} className="size-[5rem]" />
             </div>
-            <p className="text-3xl font-medium text-white">
+            <p className="text-3xl font-medium text-white text-center">
               Seamless development, flowless execution
             </p>
           </div>
-          <div className="card absolute left-[calc(50%-20rem)] top-[calc(50%-20rem)] flex size-[40rem] flex-col items-center justify-between overflow-hidden rounded-3xl bg-black pb-20 pt-10">
+          <div className="card absolute left-[calc(50%-20rem)] top-[calc(50%-20rem)] max-lg:top-[calc(50%-15rem)] max-lg:left-[calc(50%-15rem)] max-sm:top-[calc(50%-13rem)] max-sm:left-[calc(50%-13rem)]  flex size-[40rem] max-lg:size-[30rem] max-sm:size-[26rem] flex-col items-center justify-between overflow-hidden rounded-3xl bg-black pb-20 pt-10">
             <img src={ellipse} className="absolute top-0 z-[-1]" />
             <img src={triangle} className="absolute bottom-0 z-[-1]" />
-            <h4 className="relative text-3xl font-medium text-white">
+            <h4 className="relative text-3xl font-medium text-white max-lg:text-2xl">
               Launch & Support
             </h4>
-            <div className="text-center text-7xl font-medium text-white">
+            <div className="text-center text-7xl font-medium text-white max-lg:text-6xl">
               Launch, Grow, Evolve 🚀
             </div>
-            <p className="text-3xl font-medium text-white">
+            <p className="text-3xl font-medium text-white text-center">
               Seamless development, flawless execution
             </p>
           </div>

@@ -33,7 +33,7 @@ export default function Quote() {
     <section className="relative grid place-items-center p-40 px-20">
       <p
         ref={textRef}
-        className="relative z-[1] cursor-default bg-clip-text text-8xl font-medium text-transparent opacity-[0.7]"
+        className="relative z-[1] cursor-default bg-clip-text text-8xl font-medium text-transparent opacity-[0.7]  text-center max-sm:text-7xl"
         onMouseMove={(e) => handleMouseMove(e)}
       >
         INNOVATE. ITERATE. ELEVATE
