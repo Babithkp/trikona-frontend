@@ -63,11 +63,11 @@ export default function ContactUs() {
           <p className="z-[1] font-bold">trikona.offical@gmail.com</p>
         </div>
       </div>
-      <div className="flex h-full w-full flex-col gap-2 rounded-lg border bg-black p-10 px-5">
-        <h3 className="text-3xl font-medium">
+      <div className="flex h-full w-full flex-col gap-2 rounded-lg border bg-black p-10 px-5 ">
+        <h3 className="text-3xl font-medium z-[1]">
           Have an Idea? Let’s Bring It to Life!
         </h3>
-        <p>Drop us a message, and we’ll turn your vision into reality.</p>
+        <p className="z-[1]">Drop us a message, and we’ll turn your vision into reality.</p>
         <form
           className="z-[1] flex flex-wrap justify-center gap-5"
           onSubmit={handleSubmit(onSubmit)}
