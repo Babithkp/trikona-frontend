@@ -48,10 +48,10 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="relative flex justify-between gap-10 px-40 py-20 text-white max-lg:flex-col-reverse max-lg:px-10 contactus " id="contactus">
+    <section className="relative flex justify-between gap-10 px-40 py-20 text-white max-lg:flex-col-reverse max-lg:px-10 max-sm:px-0 contactus items-center overflow-hidden" id="contactus">
       <span className="bg_blend absolute left-0 top-0 size-full"></span>
       
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 max-sm:w-[70%]">
         <div className="rounded-lg border max-lg:hidden">
           <PixelCard colors="#FF6B1C">
             <h3 className="absolute left-5 top-5 text-4xl font-bold">
@@ -59,12 +59,12 @@ export default function ContactUs() {
             </h3>
           </PixelCard>
         </div>
-        <div className="flex items-center justify-center gap-3 rounded-lg border bg-black p-5">
+        <div className="flex items-center justify-center gap-3 rounded-lg border bg-black p-5  ">
           <img src={mailsvg} className="z-[1] size-[3rem]" alt="mail" />
           <p className="z-[1] font-bold">trikona.offical@gmail.com</p>
         </div>
       </div>
-      <div className="flex h-full w-full flex-col gap-2 rounded-lg border bg-black p-10 px-5 ">
+      <div className="flex h-full w-full flex-col gap-2 rounded-lg border bg-black p-10 px-5 max-sm:w-[70%] ">
         <h3 className="text-3xl font-medium z-[1] max-lg:text-2xl">
           Have an Idea? Let’s Bring It to Life!
         </h3>

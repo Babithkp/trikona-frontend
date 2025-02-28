@@ -29,14 +29,14 @@ export default function Hero() {
   );
 
   return (
-    <section className=" relative h-[88vh] ">
+    <section className=" relative h-[88vh] flex justify-center">
       <span className="bg_blend absolute left-0 top-0 size-full "></span>
 
       <div
-        className="h-full flex flex-col items-center pt-32 gap-5 "
+        className="h-full flex flex-col items-center pt-32 gap-5 max-sm:w-[70%]"
         ref={container}
       >
-        <div className="flex gap-5 flex-col z-[1]" >
+        <div className="flex gap-5 flex-col z-[1] max-sm:w-[80%]" >
           <h1 className="text-5xl font-semibold max-md:text-4xl max-sm:text-2xl text-center">
             Web Solutions That Make an Impact
           </h1>

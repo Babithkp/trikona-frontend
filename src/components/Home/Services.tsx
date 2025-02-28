@@ -43,7 +43,7 @@ export default function Services() {
       <span className="bg_blend absolute left-0 top-0 size-full"></span>
       {services.map((card, index) => (
         <div
-          className="relative flex h-[20rem] w-[24rem] max-lg:w-[30rem] max-lg:h-[24rem] flex-col items-center justify-evenly overflow-hidden rounded-2xl bg-black p-2 px-[2.5rem] text-center shadow-lg"
+          className="relative flex h-[20rem] w-[24rem] max-lg:w-[30rem] max-lg:h-[24rem] max-sm:w-[25rem] max-sm:h-[20rem] flex-col items-center justify-evenly overflow-hidden rounded-2xl bg-black p-2 px-[2.5rem] text-center shadow-lg"
           key={index}
         >
           <div className="">
