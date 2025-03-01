@@ -59,10 +59,10 @@ export default function ContactUs() {
             </h3>
           </PixelCard>
         </div>
-        <div className="flex items-center justify-center gap-3 rounded-lg border bg-black p-5  ">
+        <a href="mailto:trikonaofficial@gmail.com" className="flex items-center justify-center gap-3 rounded-lg border bg-black p-5  ">
           <img src={mailsvg} className="z-[1] size-[3rem]" alt="mail" />
-          <p className="z-[1] font-bold">trikona.offical@gmail.com</p>
-        </div>
+          <p className="z-[1] font-bold">trikonaofficial@gmail.com</p>
+        </a>
       </div>
       <div className="flex h-full w-full flex-col gap-2 rounded-lg border bg-black p-10 px-5 max-sm:w-[70%] ">
         <h3 className="text-3xl font-medium z-[1] max-lg:text-2xl">

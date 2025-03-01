@@ -1,0 +1,172 @@
+import logo from "../assets/logo.svg";
+import linkedin from "../assets/linkedin.svg";
+import instagram from "../assets/instagram.svg";
+import youtube from "../assets/youtube.svg";
+import twitter from "../assets/twitter.svg";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
+export default function Footer() {
+  return (
+    <footer className="relative flex w-full flex-col items-center justify-between gap-10 bg-black p-5 px-10 max-sm:p-2 max-md:px-5">
+      <div className="flex w-full items-center justify-between max-md:flex-col max-md:gap-10">
+        <div className="flex items-center gap-5">
+          <img src={logo} className="size-18" alt="logo" />
+          <h1 className="text-3xl font-medium text-white max-sm:text-2xl">
+            Trikona
+          </h1>
+        </div>
+        <div className="flex items-center gap-5">
+          <p>Follow us on</p>
+          <div className="z-[1] flex items-center gap-5">
+            <a href="/">
+              <img src={linkedin} alt="linkedin" />
+            </a>
+            <a href="/">
+              <img src={instagram} alt="instagram" />
+            </a>
+            <a href="/">
+              <img src={youtube} alt="youtube" />
+            </a>
+            <a href="/">
+              <img src={twitter} alt="twitter" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="flex w-full items-end justify-between max-md:flex-col max-md:gap-10 max-md:items-center">
+        <div>
+          <p>Contact us on:</p>
+          <a href="mailto:trikonaofficial@gmail.com">
+            trikonaofficial@gmail.com
+          </a>
+        </div>
+        <div className="flex gap-5 text-sm text-secondary">
+          <Dialog>
+            <DialogTrigger className="text-secondary">Privacy</DialogTrigger>
+            <DialogContent className="p-5 max-w-5xl max-lg:w-full"> 
+              <DialogHeader>
+                <DialogTitle className="text-xl">Privacy Policy</DialogTitle>
+              </DialogHeader>
+              <DialogDescription></DialogDescription>
+              <div className="scrollbar-thin scrollbar-thumb-rounded-full h-[30rem] overflow-y-scroll bg-[#252525] py-2 pl-10 pr-5 text-white rounded-lg">
+                <ul className="list-decimal text-sm">
+                  <li>
+                    Introduction
+                    <ul className="pl-2">
+                      <li>
+                        Trikona Agency respects your privacy and is committed to
+                        protecting your personal information. This policy
+                        outlines how we collect, use, and safeguard your data.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Information We Collect
+                    <ul className="list-disc pl-2">
+                      <li>
+                        Personal Information: Name, email, phone number, and
+                        payment details.
+                      </li>
+                      <li>
+                        Usage Data: IP addresses, browser type, and website
+                        interactions.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    How We Use Your Information
+                    <ul className="list-disc pl-2">
+                      <li>To provide and improve our services.</li>
+                      <li>
+                        To communicate with clients regarding their projects.
+                      </li>
+                      <li>To process payments and invoices.</li>
+                      <li>To comply with legal obligations.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Data Sharing
+                    <ul className="pl-2">
+                      <li>
+                        We do not sell or rent personal data to third parties.
+                        Information may be shared with trusted partners for
+                        service fulfillment.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Security Measures
+                    <ul className="pl-2">
+                      <li>
+                        We implement industry-standard security measures to
+                        protect your data. However, no method of transmission
+                        over the internet is 100% secure.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Cookies and Tracking
+                    <ul className="pl-2">
+                      <li>
+                        Our website may use cookies to enhance user experience.
+                        You can manage cookie preferences through your browser
+                        settings.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Third-Party Links
+                    <ul className="pl-2">
+                      <li>
+                        Our website may contain links to third-party sites. We
+                        are not responsible for their privacy practices.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Your Rights
+                    <ul className="list-disc pl-2">
+                      <li>
+                        You can request access to, correction, or deletion of
+                        your personal data.
+                      </li>
+                      <li>
+                        You can opt out of marketing communications at any time.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Changes to This Policy
+                    <ul className="pl-2">
+                      <li>
+                        We may update this Privacy Policy from time to time.
+                        Changes will be posted on this page.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Contact Us
+                    <ul className="pl-2">
+                      <li>
+                        For any questions regarding these policies, contact us
+                        at trikonaofficial@gmail.com.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </DialogContent>
+          </Dialog>
+          <button>Terms & Conditions</button>
+        </div>
+      </div>
+    </footer>
+  );
+}
