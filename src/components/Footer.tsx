@@ -168,7 +168,7 @@ export default function Footer() {
             <DialogTrigger className="text-secondary">Terms & Conditions</DialogTrigger>
             <DialogContent className="p-5 max-w-5xl max-lg:w-full"> 
               <DialogHeader>
-                <DialogTitle className="text-xl">Privacy Policy</DialogTitle>
+                <DialogTitle className="text-xl">Terms and Conditions</DialogTitle>
               </DialogHeader>
               <DialogDescription></DialogDescription>
               <div className="scrollbar-thin scrollbar-thumb-rounded-full h-[30rem] overflow-y-auto bg-[#252525] py-2 pl-10 pr-5 text-white rounded-lg">
