@@ -25,16 +25,16 @@ export default function Footer() {
         <div className="flex items-center gap-5">
           <p>Follow us on</p>
           <div className="z-[1] flex items-center gap-5">
-            <a href="/">
+            <a href="https://www.linkedin.com/company/trikonatech/?viewAsMember=true" target="_blank">
               <img src={linkedin} alt="linkedin" />
             </a>
-            <a href="/">
+            <a href="https://www.instagram.com/trikonaofficial" target="_blank">
               <img src={instagram} alt="instagram" />
             </a>
-            <a href="/">
+            <a href="https://www.youtube.com/channel/UCkyoUycl1sy2B1dDX_l0fMg" target="_blank">
               <img src={youtube} alt="youtube" />
             </a>
-            <a href="/">
+            <a href="https://x.com/Trikona_Tech" target="_blank">
               <img src={twitter} alt="twitter" />
             </a>
           </div>
@@ -55,7 +55,7 @@ export default function Footer() {
                 <DialogTitle className="text-xl">Privacy Policy</DialogTitle>
               </DialogHeader>
               <DialogDescription></DialogDescription>
-              <div className="scrollbar-thin scrollbar-thumb-rounded-full h-[30rem] overflow-y-scroll bg-[#252525] py-2 pl-10 pr-5 text-white rounded-lg">
+              <div className=" h-[30rem] overflow-y-auto bg-[#252525] py-2 pl-10 pr-5 text-white rounded-lg">
                 <ul className="list-decimal text-sm">
                   <li>
                     Introduction
@@ -164,7 +164,72 @@ export default function Footer() {
               </div>
             </DialogContent>
           </Dialog>
-          <button>Terms & Conditions</button>
+          <Dialog>
+            <DialogTrigger className="text-secondary">Terms & Conditions</DialogTrigger>
+            <DialogContent className="p-5 max-w-5xl max-lg:w-full"> 
+              <DialogHeader>
+                <DialogTitle className="text-xl">Privacy Policy</DialogTitle>
+              </DialogHeader>
+              <DialogDescription></DialogDescription>
+              <div className="scrollbar-thin scrollbar-thumb-rounded-full h-[30rem] overflow-y-auto bg-[#252525] py-2 pl-10 pr-5 text-white rounded-lg">
+                <ul className="list-decimal text-sm">
+                  <li>
+                  Introduction Welcome to Trikona Agency. By accessing our website and using our services, you agree to comply with and be bound by these Terms and Conditions. If you do not agree, please do not use our services.
+                    
+                  </li>
+                  <li>
+                  Services Trikona Agency provides website design and development, app development, AI agents, and cloud services. The scope of work, timelines, and deliverables will be agreed upon before the commencement of any project.
+                  </li>
+                  <li>
+                  Payments and Refunds
+                    <ul className="list-disc pl-2">
+                      <li>Payment terms will be outlined in the service agreement.</li>
+                      <li>
+                        To communicate with clients regarding their projects.
+                      </li>
+                      <li>A non-refundable deposit may be required before project commencement.</li>
+                      <li>Refunds are only applicable if Trikona Agency fails to deliver services as per the agreed terms.</li>
+                    </ul>
+                  </li>
+                  <li>
+                  Intellectual Property
+                    <ul className="pl-2 list-disc">
+                      <li>
+                      All content, designs, software, and AI models created by Trikona Agency remain the property of Trikona Agency until full payment is received.
+                      </li>
+                      <li>
+                      Upon full payment, ownership of the final deliverables will be transferred to the client.
+                      </li>
+                      <li>
+                      Trikona Agency retains the right to showcase completed projects in its portfolio unless otherwise agreed upon.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                  Client Responsibilities
+                    <ul className="pl-2 list-disc">
+                      <li>
+                      Clients must provide necessary content, feedback, and approvals in a timely manner.
+                      </li>
+                      <li>
+                      Delays in client responses may impact project timelines.
+                      </li>
+                      <li>
+                      Clients are responsible for maintaining and securing any provided access credentials for cloud services and applications.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                  Limitation of Liability Trikona Agency is not responsible for any losses or damages incurred due to website downtime, security breaches, AI model inaccuracies, application malfunctions, or other unforeseen circumstances.
+                  </li>
+                  <li>
+                  Termination Either party may terminate a project with written notice. Any work completed up to the termination date will be billed accordingly. Any deposits made before termination are non-refundable unless agreed otherwise.
+                  </li>
+                 
+                </ul>
+              </div>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </footer>

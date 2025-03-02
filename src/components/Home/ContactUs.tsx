@@ -53,7 +53,7 @@ export default function ContactUs() {
       
       <div className="flex flex-col gap-5 max-sm:w-[70%]">
         <div className="rounded-lg border max-lg:hidden">
-          <PixelCard colors="#FF6B1C">
+          <PixelCard colors="#FF6B1C" className="overflow-hidden">
             <h3 className="absolute left-5 top-5 text-4xl font-bold">
               Contact Us
             </h3>

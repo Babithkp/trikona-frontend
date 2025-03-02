@@ -29,9 +29,8 @@ export default function Hero() {
   );
 
   return (
-    <section className=" relative h-[88vh] flex justify-center">
+    <section className=" relative h-[88vh] max-sm:flex justify-center">
       <span className="bg_blend absolute left-0 top-0 size-full "></span>
-
       <div
         className="h-full flex flex-col items-center pt-32 gap-5 max-sm:w-[70%]"
         ref={container}

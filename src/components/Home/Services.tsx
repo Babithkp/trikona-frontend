@@ -25,15 +25,15 @@ const services = [
   },
   {
     icon: backendSvg,
-    title: "AI Models",
+    title: "AI Agents",
     description:
-      "Leveraging AI to develop intelligent models for automation, predictions, and data-driven insights. Enhancing efficiency with machine learning, NLP, and computer vision solutions.",
+      "Empowering businesses with AI-driven automation and predictive intelligence. Our AI agents utilize machine learning, NLP, and computer vision to streamline operations, enhance decision-making, and unlock data-driven insights for smarter, more efficient solutions.",
   },
   {
     icon: cloudSvg,
     title: "Cloud Solutions",
     description:
-      "Optimizing infrastructure with cloud computing services, ensuring scalability, security, and cost efficiency. Expertise in AWS, Azure, and Google Cloud.",
+      "Optimizing infrastructure with cloud computing services, ensuring scalability, security, and cost efficiency. Collaborating with cross-functional teams to design and implement cloud-based solutions that meet business needs.",
   },
 ];
 

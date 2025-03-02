@@ -8,6 +8,17 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #FFFFFF;
+    border-radius: 5px;
+}
 
 .light {
     clip-path: polygon(27% 0, 73% 0, 100% 100%, 0% 100%);
