@@ -30,7 +30,7 @@ export default function Quote() {
   }, [mousePosition]);
 
   return (
-    <section className="relative grid place-items-center p-40 px-20" id="quote">
+    <section className="relative grid place-items-center p-40 px-20 max-sm:px-0" id="quote">
       <p
         ref={textRef}
         className="relative z-[1] cursor-default bg-clip-text text-8xl font-medium text-transparent opacity-[0.7]  text-center max-sm:text-7xl"

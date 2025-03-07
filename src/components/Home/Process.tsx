@@ -86,7 +86,7 @@ export default function Process() {
       const distance = window.innerHeight / 2;
       const topVal = stackArea.getBoundingClientRect().top;
       const index = Math.floor(-1 * (topVal / distance + 1));
-      if (window.innerWidth < 460) {
+      if (window.innerWidth < 470) {
         if (index >= 0 && index < transformationsMobile.length) {
           cards.forEach((card, i) => {
             (card as HTMLElement).style.transform =

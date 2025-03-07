@@ -64,7 +64,7 @@ export default function ContactUs() {
           <p className="z-[1] font-bold">trikonaofficial@gmail.com</p>
         </a>
       </div>
-      <div className="flex h-full w-full flex-col gap-2 rounded-lg border bg-black p-10 px-5 max-sm:w-[70%] ">
+      <div className="flex h-full w-full flex-col gap-2 rounded-lg border bg-black p-10 px-5 max-sm:w-[95%] ">
         <h3 className="text-3xl font-medium z-[1] max-lg:text-2xl">
           Have an Idea? Let’s Bring It to Life!
         </h3>

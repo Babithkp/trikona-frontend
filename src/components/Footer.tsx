@@ -50,7 +50,7 @@ export default function Footer() {
         <div className="flex gap-5 text-sm text-secondary">
           <Dialog>
             <DialogTrigger className="text-secondary">Privacy</DialogTrigger>
-            <DialogContent className="p-5 max-w-5xl max-lg:w-full"> 
+            <DialogContent className="p-5 max-w-5xl max-lg:w-full max-sm:w-[85%]"> 
               <DialogHeader>
                 <DialogTitle className="text-xl">Privacy Policy</DialogTitle>
               </DialogHeader>
@@ -166,7 +166,7 @@ export default function Footer() {
           </Dialog>
           <Dialog>
             <DialogTrigger className="text-secondary">Terms & Conditions</DialogTrigger>
-            <DialogContent className="p-5 max-w-5xl max-lg:w-full"> 
+            <DialogContent className="p-5 max-w-5xl max-lg:w-full max-sm:w-[85%]"> 
               <DialogHeader>
                 <DialogTitle className="text-xl">Terms and Conditions</DialogTitle>
               </DialogHeader>
