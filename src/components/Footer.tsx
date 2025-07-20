@@ -2,8 +2,8 @@ import React from "react";
 import logo from "../../public/fullLogo-white.png";
 import Image from "next/image";
 import { Instagram } from "lucide-react";
-import Prime_twitter from "@/assets/prime_twitter";
-import Mdi_linkedin from "@/assets/mdi_linkedin";
+import Prime_twitter from "@/assets/Prime_twitter";
+import Mdi_linkedin from "@/assets/Mdi_linkedin";
 
 export default function Footer() {
   return (
