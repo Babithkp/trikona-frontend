@@ -7,7 +7,7 @@ import Mdi_linkedin from "@/assets/Mdi_linkedin";
 
 export default function Footer() {
   return (
-    <footer className="mt-10 flex justify-between rounded-lg p-5 text-sm shadow-md bg-white">
+    <footer className="mt-10 flex justify-between rounded-lg p-5 text-sm shadow-md bg-white mb-10">
       <div className="flex gap-5">
         <div className="flex w-55 flex-col gap-2">
           <Image src={logo} alt="logo" width={150} height={100} />

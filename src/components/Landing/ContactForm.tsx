@@ -7,7 +7,7 @@ export default function ContactForm() {
   return (
     <section className="flex items-stretch gap-5 rounded-lg bg-gradient-to-r from-[#A632F2] to-[#FBA325] p-5">
       <div className="relative flex w-[40%] flex-col justify-between rounded-lg bg-[#0000001A] p-5 text-white shadow-xl">
-        <p className="w-[80%] text-2xl">Questions? Ideas? Let&apos;s Talk.</p>
+        <p className="w-[80%] text-2xl font-medium">Questions? Ideas? Let&apos;s Talk.</p>
         <Image
           src={logo}
           alt="logo"
@@ -25,30 +25,30 @@ export default function ContactForm() {
       <div className="size-full rounded-lg bg-[#0000001A] p-5 py-10 shadow-xl">
         <div className="flex flex-wrap justify-between gap-9">
           <input
-            className="w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-[#FFFFFF7D]"
+            className="w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-white"
             placeholder="First Name"
             type="text"
           />
           <input
-            className="w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-[#FFFFFF7D]"
+            className="w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-white"
             placeholder="Last Name"
             type="text"
           />
           <input
-            className="w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-[#FFFFFF7D]"
+            className="w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-white"
             placeholder="Contact Number"
             type="text"
           />
           <input
-            className="w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-[#FFFFFF7D]"
+            className="w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-white"
             placeholder="Email ID"
             type="text"
           />
           <textarea
-            className="h-30 w-full rounded-md bg-[#0000002B] p-2 px-3 text-[#FFFFFF7D]"
+            className="h-30 w-full rounded-md bg-[#0000002B] p-2 px-3 text-white"
             placeholder="Message...."
           />
-          <Button className="w-full bg-white text-black">Submit</Button>
+          <Button className="w-full bg-white text-black hover:bg-black hover:text-white">Submit</Button>
         </div>
       </div>
     </section>

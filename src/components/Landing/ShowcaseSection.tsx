@@ -28,7 +28,7 @@ export default function ShowcaseSection() {
               customer invoices, and payments in one place.
             </p>
           </div>
-          <Button className="w-fit bg-black hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]">
+          <Button className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]">
             Case Study
             <Image src={logo} alt="logo" width={20} height={20} />
           </Button>
@@ -71,7 +71,7 @@ export default function ShowcaseSection() {
                 data structures and algorithms
               </p>
             </div>
-            <Button className="w-fit bg-black hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]">
+            <Button className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]">
               View Website
               <Image src={logo} alt="logo" width={20} height={20} />
             </Button>
@@ -95,7 +95,7 @@ export default function ShowcaseSection() {
                 enroll seamlessly through the app.
               </p>
             </div>
-            <Button className="w-fit bg-black hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]">
+            <Button className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]">
               Case Study
               <Image src={logo} alt="logo" width={20} height={20} />
             </Button>
@@ -156,7 +156,7 @@ export default function ShowcaseSection() {
           </div>
         </div>
         <div className="relative flex w-1/2 gap-5 overflow-hidden rounded-lg border p-5 shadow-md">
-          <div className="flex w-[50%] flex-col gap-9 justify-between">
+          <div className="flex w-[50%] flex-col justify-between gap-9">
             <div className="flex flex-col gap-5">
               <p className="text-3xl font-bold">Deconest Interiors</p>
               <p>
@@ -164,7 +164,7 @@ export default function ShowcaseSection() {
                 on creating elegant, functional spaces.
               </p>
             </div>
-            <Button className="w-fit bg-black hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]">
+            <Button className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]">
               Case Study
               <Image src={logo} alt="logo" width={20} height={20} />
             </Button>
