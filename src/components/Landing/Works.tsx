@@ -51,7 +51,7 @@ export default function Works() {
   );
 
   return (
-    <section className="flex flex-col items-center gap-5  py-20">
+    <section className="flex flex-col items-center gap-5  py-20 max-lg:px-5 max-md:px-0 max-sm:py-5">
       <div className="pb-5">
         <p className="text-center text-slate-600">What we offer</p>
         <h4 className="text-2xl font-bold">Scope of work</h4>
@@ -63,16 +63,16 @@ export default function Works() {
         onClick={() => handleClick("uiux")}
       >
         <p className="text-xl text-slate-600">01</p>
-        <div className="flex w-1/2 flex-col gap-3 text-start">
+        <div className="flex w-1/2 flex-col gap-3 text-start max-sm:w-[90%]">
           <p
-            className={`text-3xl font-[500] ${
+            className={`text-3xl font-[500] max-sm:text-lg ${
               active.uiux ? "" : "text-slate-600"
             }`}
           >
             Branding & UI/UX Design
           </p>
           <div
-            className={`${active.uiux ? "flex" : "hidden"} flex-col gap-3 overflow-hidden`}
+            className={`${active.uiux ? "flex" : "hidden"} flex-col gap-3 overflow-hidden max-sm:text-base`}
             ref={contentRefs.uiux}
           >
             <p>UX Research & Wireframing</p>
@@ -91,16 +91,16 @@ export default function Works() {
         onClick={() => handleClick("web")}
       >
         <p className="text-xl text-slate-600">02</p>
-        <div className={`flex w-1/2 flex-col gap-3 text-start`}>
+        <div className={`flex w-1/2 flex-col gap-3 text-start max-sm:w-[90%]`}>
           <p
-            className={`text-3xl font-[500] ${
+            className={`text-3xl font-[500] max-sm:text-lg ${
               active.web ? "" : "text-slate-600"
             }`}
           >
             Web & App development
           </p>
           <div
-            className={`${active.web ? "flex" : "hidden"} flex-col gap-3 overflow-hidden`}
+            className={`${active.web ? "flex" : "hidden"} flex-col gap-3 max-sm:text-base overflow-hidden`}
             ref={contentRefs.web}
           >
             <p>Custom Website Development (Static & Dynamic)</p>
@@ -119,24 +119,23 @@ export default function Works() {
         onClick={() => handleClick("launch")}
       >
         <p className="text-xl text-slate-600">03</p>
-        <div className="flex w-1/2 flex-col gap-3 text-start">
+        <div className="flex w-1/2 flex-col gap-3 text-start max-sm:w-[90%]">
           <p
-            className={`text-3xl font-[500] ${
+            className={`text-3xl font-[500] max-sm:text-lg ${
               active.launch ? "" : "text-slate-600"
             }`}
           >
             Launch & Support
           </p>
           <div
-            className={`${active.launch ? "flex" : "hidden"} flex-col gap-3 overflow-hidden`}
+            className={`${active.launch ? "flex" : "hidden"} flex-col gap-3 max-sm:text-base overflow-hidden`}
             ref={contentRefs.launch}
           >
-            <p>Custom Website Development (Static & Dynamic)</p>
-            <p>High-Fidelity UI Design</p>
-            <p>Interactive Prototyping</p>
-            <p>Design Systems & Style Guides</p>
-            <p>Logo Design & Visual Identity</p>
-            <p>Mobile-Responsive Layouts</p>
+            <p>Hosting & Domain Setup</p>
+            <p>Server & Environment Setup</p>
+            <p>Cross-Browser & Device Verification</p>
+            <p>Security & Backup Setup</p>
+            <p>Post-Launch Monitoring & Support</p>
           </div>
         </div>
       </button>

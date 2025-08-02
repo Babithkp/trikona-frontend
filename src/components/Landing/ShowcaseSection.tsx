@@ -17,12 +17,14 @@ export default function ShowcaseSection() {
   const [hoveredEventra, setHoveredEventra] = useState(false);
 
   return (
-    <section className="flex flex-col items-center gap-5 py-20">
-      <div className="flex w-full overflow-hidden rounded-lg bg-[#B2D5F2] p-5 shadow-md">
-        <div className="flex w-[28%] flex-col gap-9">
+    <section className="flex flex-col items-center gap-5 py-20 max-lg:px-5 max-md:px-0">
+      <div className="flex w-full overflow-hidden rounded-lg bg-[#B2D5F2] p-5 shadow-md max-lg:flex-col">
+        <div className="flex w-[28%] flex-col gap-9 max-lg:w-full">
           <div className="flex flex-col gap-5">
-            <p className="text-3xl font-bold">Logistics Billing Software</p>
-            <p>
+            <p className="text-3xl font-bold ">
+              Logistics Billing Software
+            </p>
+            <p >
               This custom-built logistics billing software streamlines
               operations by managing LR (Lorry Receipts), Freight Memos,
               customer invoices, and payments in one place.
@@ -34,7 +36,7 @@ export default function ShowcaseSection() {
           </Button>
         </div>
         <div
-          className="relative flex w-[70%] flex-col items-center justify-center"
+          className="relative flex w-[70%] flex-col items-center justify-center max-lg:h-60"
           onMouseEnter={() => setHoveredSln(true)}
           onMouseLeave={() => setHoveredSln(false)}
         >
@@ -43,30 +45,32 @@ export default function ShowcaseSection() {
             alt="slnDashImg"
             width={500}
             height={200}
-            className="absolute top-[70%] left-[50%] z-1 translate-[-50%] rounded-lg"
+            className="absolute top-[70%] left-[50%] z-1 translate-[-50%] rounded-lg max-sm:top-[50%]"
           />
           <Image
             src={slnLeftImg}
             alt="slnLeftImg"
             width={500}
             height={500}
-            className={`absolute top-[30%] left-[35%] rounded-lg ${hoveredSln && "left-[40%]"} transform-all duration-500`}
+            className={`absolute top-[30%] left-[35%] rounded-lg ${hoveredSln && "left-[40%]"} transform-all duration-500 `}
           />
           <Image
             src={slnRightImg}
             alt="slnRightImg"
             width={500}
             height={500}
-            className={`absolute top-[30%] right-[35%] rounded-lg ${hoveredSln && "right-[40%]"} transform-all duration-500`}
+            className={`absolute top-[30%] right-[35%] rounded-lg ${hoveredSln && "right-[40%]"} transform-all duration-500 `}
           />
         </div>
       </div>
-      <div className="flex w-full justify-between gap-5">
-        <div className="relative flex w-1/2 gap-5 overflow-hidden rounded-lg bg-[#E7EEFF] p-5 shadow-md">
+      <div className="flex w-full justify-between gap-5 max-lg:flex-col">
+        <div className="relative flex w-1/2 gap-5 overflow-hidden rounded-lg bg-[#E7EEFF] p-5 shadow-md max-lg:w-full">
           <div className="flex w-[50%] flex-col justify-between gap-9">
             <div className="flex flex-col gap-5">
-              <p className="text-3xl font-bold">Snippet2Sketch</p>
-              <p>
+              <p className="text-3xl font-bold max-lg:text-2xl">
+                Snippet2Sketch
+              </p>
+              <p className="max-lg:text-sm">
                 Snippet2Sketch is an interactive platform that visually explains
                 data structures and algorithms
               </p>
@@ -85,11 +89,11 @@ export default function ShowcaseSection() {
             />
           </div>
         </div>
-        <div className="relative flex w-1/2 gap-5 overflow-hidden rounded-lg bg-[#E8FBF4] p-5 shadow-md">
-          <div className="flex w-[50%] flex-col gap-9">
+        <div className="relative flex w-1/2 gap-5 overflow-hidden rounded-lg bg-[#E8FBF4] p-5 shadow-md max-lg:w-full max-sm:flex-col">
+          <div className="flex w-[50%] flex-col gap-9 max-sm:w-full">
             <div className="flex flex-col gap-5">
               <p className="text-3xl font-bold">Eventra -App</p>
-              <p>
+              <p className="max-lg:text-sm">
                 A platform designed to centralize and showcase all campus events
                 in one place. Students can browse events, view details, and
                 enroll seamlessly through the app.
@@ -101,7 +105,7 @@ export default function ShowcaseSection() {
             </Button>
           </div>
           <div
-            className="relative flex w-[70%] flex-col items-center justify-center"
+            className="relative flex w-[70%] flex-col items-center justify-center max-sm:w-full max-sm:h-80"
             onMouseEnter={() => setHoveredEventra(true)}
             onMouseLeave={() => setHoveredEventra(false)}
           >
@@ -129,9 +133,9 @@ export default function ShowcaseSection() {
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-between gap-5">
-        <div className="relative flex w-1/2 gap-5 overflow-hidden rounded-lg border p-5 shadow-md">
-          <div className="flex w-[60%] flex-col gap-9">
+      <div className="flex w-full justify-between gap-5 max-lg:flex-col-reverse">
+        <div className="relative flex w-1/2 gap-5 overflow-hidden rounded-lg border p-5 shadow-md max-lg:w-full">
+          <div className="flex w-[60%] flex-col gap-9 max-sm:w-full max-sm:h-70 justify-between">
             <div>
               <p className="font-bold">Built by</p>
               <p className="bg-gradient-to-r [background-image:linear-gradient(to_right,_#A632F2_0%,_#FBA325_50%)] bg-clip-text text-5xl font-bold text-transparent">
@@ -155,11 +159,13 @@ export default function ShowcaseSection() {
             />
           </div>
         </div>
-        <div className="relative flex w-1/2 gap-5 overflow-hidden rounded-lg border p-5 shadow-md">
-          <div className="flex w-[50%] flex-col justify-between gap-9">
+        <div className="relative flex w-1/2 gap-5 overflow-hidden rounded-lg border p-5 shadow-md max-lg:w-full max-sm:flex-col">
+          <div className="flex w-[50%] flex-col justify-between gap-9 max-sm:w-full">
             <div className="flex flex-col gap-5">
-              <p className="text-3xl font-bold">Deconest Interiors</p>
-              <p>
+              <p className="text-3xl font-bold max-lg:text-2xl">
+                Deconest Interiors
+              </p>
+              <p className="max-lg:text-sm">
                 Deconest Interiors is a bespoke interior design studio focused
                 on creating elegant, functional spaces.
               </p>
@@ -169,7 +175,7 @@ export default function ShowcaseSection() {
               <Image src={logo} alt="logo" width={20} height={20} />
             </Button>
           </div>
-          <div>
+          <div className="max-sm:h-30">
             <Image
               src={deconestLeftImg}
               alt="deconestLeftImg"

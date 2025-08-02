@@ -1,11 +1,9 @@
-import React from "react";
-
 export default function Prime_twitter() {
   return (
     <svg
-      width="10"
-      height="10"
-      viewBox="0 0 5 5"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -15,8 +13,8 @@ export default function Prime_twitter() {
           maskUnits="userSpaceOnUse"
           x="0"
           y="0"
-          width="20"
-          height="20"
+          width="24"
+          height="24"
         >
           <path d="M0 0H24V24H0V0Z" fill="white" />
         </mask>

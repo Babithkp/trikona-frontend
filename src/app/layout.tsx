@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
+import { ToastContainer } from 'react-toastify';
 const interSans = Inter({
   subsets: ["latin"],
   variable: "--font-inter", 
@@ -23,8 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-[#F5F5F5] flex justify-center scroll-smooth">
       <body
-        className={`${interSans.variable}  antialiased w-[1520px] bg-[#F5F5F5] px-5`}
+        className={`${interSans.variable}  antialiased w-[1520px] bg-[#F5F5F5] px-5 max-lg:px-0`}
       >
+        <ToastContainer/>
         <Header/>
         {children}
         <Footer/>

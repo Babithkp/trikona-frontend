@@ -8,7 +8,7 @@ export default function BuiltSection() {
         <p className="text-center text-slate-600">Built for What’s Next</p>
         <h4 className="text-2xl font-bold">The Trikona way</h4>
       </div>
-      <p className="w-[60%] text-center text-slate-600">
+      <p className="w-[60%] text-center text-slate-600 max-sm:w-full">
         Discover how Trikona transforms ideas into digital products through a
         proven end-to-end process. From client onboarding to UI/UX design,
         development, and quality assurance, we deliver scalable websites and

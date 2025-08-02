@@ -1,13 +1,73 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import logo from "@/assets/grey_logo.png";
 import Image from "next/image";
 import { MoveRight } from "lucide-react";
 import { Button } from "../ui/button";
+import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
+
+type FormData = {
+  firstName: string;
+  lastName: string;
+  contactNumber: string;
+  email: string;
+  message: string;
+};
+
 export default function ContactForm() {
+  const [isLoading, setIsLoading] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<FormData>();
+
+  const onSubmit = async (data: FormData) => {
+    // Append your Web3Forms access key directly
+    const formDataWithKey = {
+      ...data,
+      access_key: "c70ae29d-0e7a-4698-a790-f8189613bf96",
+    };
+    setIsLoading(true);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formDataWithKey),
+      });
+
+      if (response.ok) {
+        reset()
+        toast.success(
+          "Thanks for contacting us! We will get back to you shortly.",
+          {
+            hideProgressBar: true,
+          },
+        );
+      } else {
+        toast.error("Something went wrong. Please try again later.");
+      }
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (error: unknown) {
+      toast.error(
+        "Something went wrong. Please check your internet connection.",
+      );
+    }
+    setIsLoading(false);
+  };
+
   return (
-    <section className="flex items-stretch gap-5 rounded-lg bg-gradient-to-r from-[#A632F2] to-[#FBA325] p-5">
-      <div className="relative flex w-[40%] flex-col justify-between rounded-lg bg-[#0000001A] p-5 text-white shadow-xl">
-        <p className="w-[80%] text-2xl font-medium">Questions? Ideas? Let&apos;s Talk.</p>
+    <section className="flex items-stretch gap-5 rounded-lg bg-gradient-to-r from-[#A632F2] to-[#FBA325] p-5 max-lg:flex-col max-md:px-0">
+      <div className="relative flex w-[40%] flex-col justify-between rounded-lg bg-[#0000001A] p-5 text-white shadow-xl max-lg:w-full max-lg:h-100">
+        <p className="w-[80%] text-2xl font-medium">
+          Questions? Ideas? Let&apos;s Talk.
+        </p>
         <Image
           src={logo}
           alt="logo"
@@ -23,33 +83,55 @@ export default function ContactForm() {
         </div>
       </div>
       <div className="size-full rounded-lg bg-[#0000001A] p-5 py-10 shadow-xl">
-        <div className="flex flex-wrap justify-between gap-9">
+        <form
+          className="flex flex-wrap justify-between gap-9"
+          onSubmit={handleSubmit(onSubmit)}
+        >
+          <div className="w-[48%] max-lg:w-full">
+            <input
+              className="w-full rounded-md bg-[#0000002B] p-2 px-3 text-white"
+              placeholder="First Name"
+              type="text"
+              {...register("firstName", { required: true })}
+            />
+            {errors.firstName && (
+              <p className="mt-1 text-sm">First Name is required</p>
+            )}
+          </div>
           <input
-            className="w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-white"
-            placeholder="First Name"
-            type="text"
-          />
-          <input
-            className="w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-white"
+            className="h-fit w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-white max-lg:w-full"
             placeholder="Last Name"
             type="text"
+            {...register("lastName")}
           />
           <input
-            className="w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-white"
+            className="h-fit w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-white max-lg:w-full"
             placeholder="Contact Number"
             type="text"
+            {...register("contactNumber")}
           />
-          <input
-            className="w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-white"
-            placeholder="Email ID"
-            type="text"
-          />
+          <div className="w-[48%] max-lg:w-full">
+            <input
+              className="w-full rounded-md bg-[#0000002B] p-2 px-3 text-white "
+              placeholder="Email ID"
+              type="text"
+              {...register("email", { required: true })}
+            />
+            {errors.email && (
+              <p className="mt-1 text-sm">Email ID is required</p>
+            )}
+          </div>
           <textarea
-            className="h-30 w-full rounded-md bg-[#0000002B] p-2 px-3 text-white"
+            className="h-30 w-full rounded-md bg-[#0000002B] p-2 px-3 text-white max-lg:w-full"
             placeholder="Message...."
           />
-          <Button className="w-full bg-white text-black hover:bg-black hover:text-white">Submit</Button>
-        </div>
+          <Button
+            className="w-full bg-white text-black hover:bg-black hover:text-white"
+            disabled={isLoading}
+          >
+            {isLoading ? " Sending..." : " Send"}
+          </Button>
+        </form>
       </div>
     </section>
   );
