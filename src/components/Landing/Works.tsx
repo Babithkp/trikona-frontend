@@ -54,7 +54,7 @@ export default function Works() {
     <section className="flex flex-col items-center gap-5  py-20 max-lg:px-5 max-md:px-0 max-sm:py-5">
       <div className="pb-5">
         <p className="text-center text-slate-600">What we offer</p>
-        <h4 className="text-2xl font-bold">Scope of work</h4>
+        <h4 className="text-3xl font-bold">Scope of work</h4>
       </div>
       <button
         className={`border-secondary z-[1] flex w-full cursor-pointer justify-between rounded-lg border p-5 ${
@@ -65,7 +65,7 @@ export default function Works() {
         <p className="text-xl text-slate-600">01</p>
         <div className="flex w-1/2 flex-col gap-3 text-start max-sm:w-[90%]">
           <p
-            className={`text-3xl font-[500] max-sm:text-lg ${
+            className={`text-3xl font-[600] max-sm:text-lg ${
               active.uiux ? "" : "text-slate-600"
             }`}
           >
@@ -93,7 +93,7 @@ export default function Works() {
         <p className="text-xl text-slate-600">02</p>
         <div className={`flex w-1/2 flex-col gap-3 text-start max-sm:w-[90%]`}>
           <p
-            className={`text-3xl font-[500] max-sm:text-lg ${
+            className={`text-3xl font-[600] max-sm:text-lg ${
               active.web ? "" : "text-slate-600"
             }`}
           >
@@ -121,7 +121,7 @@ export default function Works() {
         <p className="text-xl text-slate-600">03</p>
         <div className="flex w-1/2 flex-col gap-3 text-start max-sm:w-[90%]">
           <p
-            className={`text-3xl font-[500] max-sm:text-lg ${
+            className={`text-3xl font-[600] max-sm:text-lg ${
               active.launch ? "" : "text-slate-600"
             }`}
           >

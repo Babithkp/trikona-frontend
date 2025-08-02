@@ -7,8 +7,8 @@ import Prime_twitter from "@/assets/Prime_twitter";
 
 export default function Footer() {
   return (
-    <footer className="mt-10 mb-10 flex justify-between rounded-lg bg-white p-5 text-sm shadow-md">
-      <div className="flex w-full justify-between max-lg:flex-col gap-10">
+    <footer className="mt-10 mb-10 flex justify-between rounded-lg bg-white p-10 text-sm shadow-md max-md:p-5">
+      <div className="flex w-full justify-between gap-10 max-lg:flex-col">
         <div className="flex w-55 flex-col gap-2">
           <Image src={logo} alt="logo" width={150} height={100} />
           <p>Trikona Tech</p>
@@ -19,22 +19,24 @@ export default function Footer() {
             <p>8197059845</p>
           </div>
         </div>
-        <div className="flex w-[60%] flex-wrap justify-between max-sm:w-full">
-          <div>
-            <p className="font-medium">Case studies</p>
-            <p className="text-slate-600">Logistic Billing Software</p>
-            <p className="text-slate-600">Eventra</p>
+        <div className="flex w-[60%] flex-wrap justify-between gap-5 max-sm:w-full">
+          <div className="flex w-[50%] justify-between gap-5 max-sm:w-full">
+            <div className="flex flex-col gap-2">
+              <p className="font-bold">Case studies</p>
+              <p className="text-slate-600">Logistic Billing Software</p>
+              <p className="text-slate-600">Eventra</p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="font-bold">Careers</p>
+              <p className="text-slate-600">We are hiring!</p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="font-bold">Get in touch</p>
+              <p className="text-slate-600">Contact Us</p>
+            </div>
           </div>
-          <div>
-            <p className="font-medium">Careers</p>
-            <p className="text-slate-600">We are hiring!</p>
-          </div>
-          <div>
-            <p className="font-medium">Get in touch</p>
-            <p className="text-slate-600">Contact Us</p>
-          </div>
-          <div>
-            <p className="font-medium">Our works</p>
+          <div className="flex w-200 flex-col gap-2 max-sm:w-full ">
+            <p className="font-bold">Our works</p>
             <p className="text-slate-600">Deconest Interiors</p>
             <p className="text-slate-600">Outdoors</p>
             <p className="text-slate-600">Nexter</p>

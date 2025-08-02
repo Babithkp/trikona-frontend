@@ -8,14 +8,14 @@ import RightVector from "@/assets/RightVector";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-center gap-20 max-lg:overflow-hidden ">
+    <section className="relative flex flex-col items-center justify-center gap-16 max-lg:overflow-hidden ">
       <div className="absolute left-0 blur-xl">
         <LeftVector />
       </div>
       <div className="absolute right-0 blur-xl">
         <RightVector />
       </div>
-      <div className="flex flex-col items-center gap-5 pt-30 text-center">
+      <div className="flex flex-col items-center gap-8 pt-30 text-center">
         <h1 className="flex w-200 flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:text-xl max-sm:w-full">
           Future-Proof
           <span
@@ -36,7 +36,7 @@ export default function HeroSection() {
           products. With a focus on clean UI/UX design and robust development,
           we deliver seamless, scalable solutions for modern businesses.
         </h3>
-        <div className="z-1 flex gap-10 w-full justify-center">
+        <div className="z-1 flex gap-5 w-full justify-center">
           <Button
             variant={"outline"}
             className="border border-black px-7 hover:bg-black hover:text-white"
@@ -49,29 +49,29 @@ export default function HeroSection() {
           </Button>
         </div>
       </div>
-      <div className="flex w-full flex-wrap items-center justify-between px-20 max-lg:px-5 max-md:px-0">
-        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm max-sm:gap-5">
+      <div className="flex w-[70%] flex-wrap items-start justify-between px-20 max-lg:px-5 max-md:px-0 max-lg:w-full gap-5">
+        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm ">
           <Brain />
           <p className="font-[600]">Design That Thinks</p>
           <p className="text-sm font-light max-sm:text-xs">
             Ideas before interfaces. We solve before we style.
           </p>
         </div>
-        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm">
+        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm ">
           <Finger />
           <p className="font-[600]">Tech That Feels</p>
           <p className="text-sm font-light max-sm:text-xs">
             Interfaces that understand users, not just instruct them.
           </p>
         </div>
-        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm">
+        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm ">
           <Code />
           <p className="font-[600]">Code That Clicks</p>
           <p className="text-sm font-light max-sm:text-xs">
             Structured, scalable, and clean — every line matters.
           </p>
         </div>
-        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm">
+        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm ">
           <Strategy />
           <p className="font-[600]">Strategy That Sticks</p>
           <p className="text-sm font-light max-sm:text-xs">

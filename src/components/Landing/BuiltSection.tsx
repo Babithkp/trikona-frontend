@@ -6,7 +6,7 @@ export default function BuiltSection() {
     <section className="flex flex-col items-center gap-5 py-20">
       <div>
         <p className="text-center text-slate-600">Built for What’s Next</p>
-        <h4 className="text-2xl font-bold">The Trikona way</h4>
+        <h4 className="text-3xl font-bold">The Trikona way</h4>
       </div>
       <p className="w-[60%] text-center text-slate-600 max-sm:w-full">
         Discover how Trikona transforms ideas into digital products through a

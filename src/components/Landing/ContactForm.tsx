@@ -84,12 +84,12 @@ export default function ContactForm() {
       </div>
       <div className="size-full rounded-lg bg-[#0000001A] p-5 py-10 shadow-xl">
         <form
-          className="flex flex-wrap justify-between gap-9"
+          className="flex flex-wrap justify-between gap-5"
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className="w-[48%] max-lg:w-full">
             <input
-              className="w-full rounded-md bg-[#0000002B] p-2 px-3 text-white"
+              className="w-full rounded-md bg-[#0000002B] p-3 text-white"
               placeholder="First Name"
               type="text"
               {...register("firstName", { required: true })}
@@ -99,20 +99,20 @@ export default function ContactForm() {
             )}
           </div>
           <input
-            className="h-fit w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-white max-lg:w-full"
+            className="h-fit w-[48%] rounded-md bg-[#0000002B] p-3 text-white max-lg:w-full"
             placeholder="Last Name"
             type="text"
             {...register("lastName")}
           />
           <input
-            className="h-fit w-[48%] rounded-md bg-[#0000002B] p-2 px-3 text-white max-lg:w-full"
+            className="h-fit w-[48%] rounded-md bg-[#0000002B] p-3 text-white max-lg:w-full"
             placeholder="Contact Number"
             type="text"
             {...register("contactNumber")}
           />
           <div className="w-[48%] max-lg:w-full">
             <input
-              className="w-full rounded-md bg-[#0000002B] p-2 px-3 text-white "
+              className="w-full rounded-md bg-[#0000002B] p-3 text-white "
               placeholder="Email ID"
               type="text"
               {...register("email", { required: true })}
@@ -126,10 +126,10 @@ export default function ContactForm() {
             placeholder="Message...."
           />
           <Button
-            className="w-full bg-white text-black hover:bg-black hover:text-white"
+            className="w-full bg-white text-black hover:bg-black hover:text-white p-6  text-base"
             disabled={isLoading}
           >
-            {isLoading ? " Sending..." : " Send"}
+            {isLoading ? " Sending..." : "Submit"}
           </Button>
         </form>
       </div>
