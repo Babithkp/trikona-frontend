@@ -3,7 +3,7 @@ import logo from "../../public/fullLogo-white.png";
 import Image from "next/image";
 import { Instagram } from "lucide-react";
 import Mdi_linkedin from "@/assets/Mdi_linkedin";
-import Prime_twitter from "@/assets/prime_twitter";
+import Prime_twitter from "@/assets/Prime_twitter";
 
 export default function Footer() {
   return (
