@@ -4,6 +4,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ToastContainer } from 'react-toastify';
+import { Analytics } from "@vercel/analytics/next"
+
+
 const interSans = Inter({
   subsets: ["latin"],
   variable: "--font-inter", 
@@ -25,6 +28,7 @@ export default function RootLayout({
       <body
         className={`${interSans.variable}  antialiased w-[1520px] bg-[#F5F5F5] px-5 max-lg:px-0`}
       >
+        <Analytics/>
         <ToastContainer/>
         <Header/>
         {children}
