@@ -28,11 +28,11 @@ export default function RootLayout({
       <body
         className={`${interSans.variable}  antialiased w-[1520px] bg-[#F5F5F5] px-5 max-lg:px-0`}
       >
-        <Analytics/>
         <ToastContainer/>
         <Header/>
         {children}
         <Footer/>
+        <Analytics/>
       </body>
     </html>
   );

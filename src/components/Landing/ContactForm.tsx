@@ -63,7 +63,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="flex items-stretch gap-5 rounded-lg bg-gradient-to-r from-[#A632F2] to-[#FBA325] p-5 max-lg:flex-col max-md:px-0">
+    <section className="flex items-stretch gap-5 rounded-lg bg-gradient-to-r from-[#A632F2] to-[#FBA325] p-5 max-lg:flex-col max-md:px-0" id="contact">
       <div className="relative flex w-[40%] flex-col justify-between rounded-lg bg-[#0000001A] p-5 text-white shadow-xl max-lg:w-full max-lg:h-100">
         <p className="w-[80%] text-2xl font-medium">
           Questions? Ideas? Let&apos;s Talk.
