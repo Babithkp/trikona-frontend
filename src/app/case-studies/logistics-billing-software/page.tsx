@@ -29,18 +29,18 @@ export default function Page() {
   }, []);
 
   return (
-    <main className="relative py-20">
+    <main className="relative py-20 max-lg:px-2">
       <div className="absolute top-0 left-0 blur-xl max-md:hidden">
         <LeftVector />
       </div>
       <div className="absolute right-0 blur-xl max-md:hidden">
         <RightVector />
       </div>
-      <section className="w-full overflow-hidden rounded-lg border p-5 shadow-lg">
-        <div className="flex items-center justify-between">
+      <section className="w-full overflow-hidden rounded-lg border p-5 shadow-lg max-lg:p-2">
+        <div className="flex items-center justify-between max-lg:flex-col max-lg:items-start max-lg:gap-5">
           <div>
             <p>Case study</p>
-            <h1 className="text-4xl font-bold">Logistics Billing software</h1>
+            <h1 className="text-4xl font-bold max-lg:text-2xl">Logistics Billing software</h1>
           </div>
           <div>
             <p className="font-medium">Built using</p>
@@ -54,13 +54,13 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <p className="mb-5 w-[40%]">
+        <p className="mb-5 w-[40%] max-lg:w-full">
           This custom-built logistics billing software streamlines operations by
           managing LR (Lorry Receipts), Freight Memos, customer invoices, and
           payments in one place.
         </p>
-        <div className="flex">
-          <div className="flex w-[30%] flex-col gap-3">
+        <div className="flex max-lg:flex-col max-lg:gap-5">
+          <div className="flex w-[30%] flex-col gap-3 max-lg:w-full">
             <div className="flex flex-col gap-2">
               <p>Payment tracking accuracy </p>
               <p className="bg-gradient-to-r [background-image:linear-gradient(to_right,_#A632F2_0%,_#FBA325_10%)] bg-clip-text text-2xl font-bold text-transparent">
@@ -110,7 +110,7 @@ export default function Page() {
         </div>
       </section>
       <section className="relative flex pt-20">
-        <div className="sticky top-20 flex h-fit w-[40%] gap-3">
+        <div className="sticky top-20 flex h-fit w-[40%] gap-3 max-lg:hidden">
           <div className="w-[3px] bg-slate-400">
             <div
               className="transform-all bg-gradient-to-b from-[#A632F2] to-[#FBA325] duration-500"
@@ -131,7 +131,7 @@ export default function Page() {
             <p className="text-slate-400">What client loved about us</p>
           </div>
         </div>
-        <div className="flex w-[60%] flex-col gap-5">
+        <div className="flex w-[60%] flex-col gap-5 max-lg:w-full">
           <h2 className="text-3xl font-bold">Client Challenge</h2>
           <div>
             <p>
