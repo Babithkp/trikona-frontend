@@ -11,26 +11,31 @@ import eventraCenterImg from "@/assets/eventra-center.png";
 import eventraLeftImg from "@/assets/eventra-left.png";
 import eventraRightImg from "@/assets/eventra-right.png";
 import deconestLeftImg from "@/assets/deconest.png";
+import { useRouter } from "next/navigation";
 
 export default function ShowcaseSection() {
   const [hoveredSln, setHoveredSln] = useState(false);
   const [hoveredEventra, setHoveredEventra] = useState(false);
+  const navigate = useRouter();
 
   return (
     <section className="flex flex-col items-center gap-5 py-20 max-lg:px-5 max-md:px-0">
       <div className="flex w-full overflow-hidden rounded-lg bg-[#B2D5F2] p-5 shadow-md max-lg:flex-col">
         <div className="flex w-[28%] flex-col gap-9 max-lg:w-full">
           <div className="flex flex-col gap-5">
-            <p className="text-3xl font-bold ">
-              Logistics Billing Software
-            </p>
-            <p >
+            <p className="text-3xl font-bold">Logistics Billing Software</p>
+            <p>
               This custom-built logistics billing software streamlines
               operations by managing LR (Lorry Receipts), Freight Memos,
               customer invoices, and payments in one place.
             </p>
           </div>
-          <Button className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]">
+          <Button
+            className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
+            onClick={() =>
+              navigate.push("/case-studies/logistics-billing-software")
+            }
+          >
             Case Study
             <Image src={logo} alt="logo" width={20} height={20} />
           </Button>
@@ -52,14 +57,14 @@ export default function ShowcaseSection() {
             alt="slnLeftImg"
             width={500}
             height={500}
-            className={`absolute top-[30%] left-[35%] rounded-lg ${hoveredSln && "left-[40%]"} transform-all duration-500 `}
+            className={`absolute top-[30%] left-[35%] rounded-lg ${hoveredSln && "left-[40%]"} transform-all duration-500`}
           />
           <Image
             src={slnRightImg}
             alt="slnRightImg"
             width={500}
             height={500}
-            className={`absolute top-[30%] right-[35%] rounded-lg ${hoveredSln && "right-[40%]"} transform-all duration-500 `}
+            className={`absolute top-[30%] right-[35%] rounded-lg ${hoveredSln && "right-[40%]"} transform-all duration-500`}
           />
         </div>
       </div>
@@ -99,13 +104,16 @@ export default function ShowcaseSection() {
                 enroll seamlessly through the app.
               </p>
             </div>
-            <Button className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]">
+            <Button
+              className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
+              onClick={() => navigate.push("/case-studies/eventra")}
+            >
               Case Study
               <Image src={logo} alt="logo" width={20} height={20} />
             </Button>
           </div>
           <div
-            className="relative flex w-[70%] flex-col items-center justify-center max-sm:w-full max-sm:h-80"
+            className="relative flex w-[70%] flex-col items-center justify-center max-sm:h-80 max-sm:w-full"
             onMouseEnter={() => setHoveredEventra(true)}
             onMouseLeave={() => setHoveredEventra(false)}
           >
@@ -135,7 +143,7 @@ export default function ShowcaseSection() {
       </div>
       <div className="flex w-full justify-between gap-5 max-lg:flex-col-reverse">
         <div className="relative flex w-1/2 gap-5 overflow-hidden rounded-lg border p-5 shadow-md max-lg:w-full">
-          <div className="flex w-[60%] flex-col gap-9 max-sm:w-full max-sm:h-70 justify-between">
+          <div className="flex w-[60%] flex-col justify-between gap-9 max-sm:h-70 max-sm:w-full">
             <div>
               <p className="font-bold">Built by</p>
               <p className="bg-gradient-to-r [background-image:linear-gradient(to_right,_#A632F2_0%,_#FBA325_50%)] bg-clip-text text-5xl font-bold text-transparent">
@@ -171,7 +179,7 @@ export default function ShowcaseSection() {
               </p>
             </div>
             <Button className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]">
-              Case Study
+              Visit Website
               <Image src={logo} alt="logo" width={20} height={20} />
             </Button>
           </div>

@@ -100,7 +100,7 @@ export default function Header() {
             </Link>
           </li>
         </ul>
-        <Link href={"#contact"} className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-base text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325] max-sm:hidden max-sm:px-1 max-sm:text-xs z-1" >
+        <Link href={"/contactus"} className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-base text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325] max-sm:hidden max-sm:px-1 max-sm:text-xs z-1" >
           Contact Us
         </Link>
         <button
