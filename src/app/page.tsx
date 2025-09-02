@@ -3,7 +3,6 @@ import ContactForm from "@/components/Landing/ContactForm";
 import HeroSection from "@/components/Landing/HeroSection";
 import ShowcaseSection from "@/components/Landing/ShowcaseSection";
 import Works from "@/components/Landing/Works";
-
 export default function Home() {
   return (
     <main>
