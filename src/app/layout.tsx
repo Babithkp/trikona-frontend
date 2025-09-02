@@ -28,19 +28,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  function Analytics() {
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag(...args: unknown[]) {
-      window.dataLayer.push(args);
-    }
-
-    window.gtag = gtag;
-
-    window.gtag("js", new Date());
-    window.gtag("config", "G-D2CEW60P40");
-    return null;
-  }
   return (
     <html lang="en" className="flex justify-center scroll-smooth bg-[#F5F5F5]">
       <body
@@ -50,7 +37,6 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        <Analytics />
       </body>
       <Script
         async
