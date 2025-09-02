@@ -1,4 +1,3 @@
-"use client";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -6,7 +5,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ToastContainer } from "react-toastify";
 import Script from "next/script";
-import { useEffect } from "react";
 
 const interSans = Inter({
   subsets: ["latin"],
@@ -31,19 +29,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   function Analytics() {
-    useEffect(() => {
-      window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
 
-      function gtag(...args: unknown[]) {
-        window.dataLayer.push(args);
-      }
+    function gtag(...args: unknown[]) {
+      window.dataLayer.push(args);
+    }
 
-      window.gtag = gtag;
+    window.gtag = gtag;
 
-      window.gtag("js", new Date());
-      window.gtag("config", "G-D2CEW60P40");
-    }, []);
-
+    window.gtag("js", new Date());
+    window.gtag("config", "G-D2CEW60P40");
     return null;
   }
   return (
