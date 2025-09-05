@@ -12,10 +12,12 @@ const nextConfig = {
           name: '[name].[hash].[ext]',
         },
       },
+      
     });
 
     return config;
   },
+  
 };
 
 module.exports = nextConfig;

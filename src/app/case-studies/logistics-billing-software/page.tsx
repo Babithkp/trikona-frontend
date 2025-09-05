@@ -14,6 +14,8 @@ import Image from "next/image";
 export default function Page() {
   const [hoveredSln, setHoveredSln] = useState(false);
   const [pageSection, setScrollProgress] = useState(0);
+  console.log(pageSection);
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +38,7 @@ export default function Page() {
       <div className="absolute right-0 blur-xl max-md:hidden">
         <RightVector />
       </div>
-      <section className="w-full overflow-hidden rounded-lg border p-5 shadow-lg max-lg:p-2">
+      <section className="w-full overflow-hidden rounded-lg border p-5 py-10 shadow-lg max-lg:p-2">
         <div className="flex items-center justify-between max-lg:flex-col max-lg:items-start max-lg:gap-5">
           <div>
             <p>Case study</p>
@@ -119,16 +121,16 @@ export default function Page() {
               }}
             ></div>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 text-lg">
             <p
-              className={` ${pageSection === 10 ? "text-black" : "text-slate-400"}`}
+              className={` ${pageSection <= 0 ? "text-slate-400":"text-black" }`}
             >
               Client Challenge
             </p>
-            <p className="text-slate-400">Our Approach</p>
-            <p className="text-slate-400">Solution</p>
-            <p className="text-slate-400">Results</p>
-            <p className="text-slate-400">What client loved about us</p>
+            <p className={` ${pageSection <= 20 ? "text-slate-400":"text-black" }`}>Our Approach</p>
+            <p className={` ${pageSection <= 40 ? "text-slate-400":"text-black" }`}>Solution</p>
+            <p className={` ${pageSection <= 60 ? "text-slate-400":"text-black" }`}>Results</p>
+            <p className={` ${pageSection <= 90 ? "text-slate-400":"text-black" }`}>What client loved about us</p>
           </div>
         </div>
         <div className="flex w-[60%] flex-col gap-5 max-lg:w-full">

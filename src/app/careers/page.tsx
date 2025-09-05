@@ -5,17 +5,21 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import LeftVector from "@/assets/LeftVector";
 import RightVector from "@/assets/RightVector";
+import { Upload } from "lucide-react";
 
 type FormData = {
   firstName: string;
   lastName: string;
-  contactNumber: string;
-  email: string;
-  message: string;
+  role: string;
+  experience: string;
+  portfolio: string;
+  workType: string;
 };
 
 export default function Page() {
   const [isLoading, setIsLoading] = useState(false);
+  const [file, setFile] = useState<File | undefined>(undefined);
+
   const {
     register,
     handleSubmit,
@@ -40,9 +44,11 @@ export default function Page() {
         },
         body: JSON.stringify(formDataWithKey),
       });
-
+      console.log(response);
+      
       if (response.ok) {
         reset();
+        setFile(undefined);
         toast.success(
           "Thanks for contacting us! We will get back to you shortly.",
           {
@@ -62,7 +68,7 @@ export default function Page() {
   };
 
   return (
-    <section className="relative mt-10 flex flex-col items-stretch gap-5 max-lg:flex-col max-md:px-0 overflow-hidden">
+    <section className="relative mt-10 flex flex-col items-stretch gap-5 overflow-hidden max-lg:flex-col max-md:px-5">
       <div className="absolute left-0 blur-xl">
         <LeftVector />
       </div>
@@ -71,7 +77,7 @@ export default function Page() {
       </div>
       <div className="my-5 flex w-full flex-col items-center gap-5">
         <h2 className="flex w-200 flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-xl">
-          Get in touch with
+          Join out
           <span
             style={{
               background:
@@ -81,7 +87,7 @@ export default function Page() {
               display: "inline-block",
             }}
           >
-            us
+            Team
           </span>
         </h2>
         <p className="text-center font-medium">
@@ -111,22 +117,51 @@ export default function Page() {
         />
         <input
           className="h-fit w-[48%] rounded-md border border-black p-3 max-lg:w-full"
-          placeholder="Contact Number"
+          placeholder="Role that you are applying for"
           type="text"
-          {...register("contactNumber")}
+          {...register("role")}
         />
         <div className="w-[48%] max-lg:w-full">
           <input
             className="w-full rounded-md border border-black p-3"
-            placeholder="Email ID"
+            placeholder="Experience"
             type="text"
-            {...register("email", { required: true })}
+            {...register("experience", { required: true })}
           />
-          {errors.email && <p className="mt-1 text-sm">Email ID is required</p>}
+          {errors.experience && (
+            <p className="mt-1 text-sm">Experience is required</p>
+          )}
         </div>
-        <textarea
-          className="h-30 w-full rounded-md border border-black p-2 px-3 max-lg:w-full"
-          placeholder="Message...."
+        <input
+          className="h-fit w-[48%] rounded-md border border-black p-3 max-lg:w-full"
+          placeholder="Portfolio/Linkedin URL"
+          type="text"
+          {...register("portfolio")}
+        />
+        <input
+          className="h-fit w-[48%] rounded-md border border-black p-3 max-lg:w-full"
+          placeholder="Preferred work type"
+          type="text"
+          {...register("workType")}
+        />
+        <label
+          className="flex h-30 w-full items-center justify-center gap-5 rounded-md border border-black p-2 px-3 text-sm text-slate-500 max-lg:w-full"
+          htmlFor="resume"
+        >
+          {file ? (
+            file && file?.name
+          ) : (
+            <>
+              <Upload size={20} />
+              Upload resume
+            </>
+          )}
+        </label>
+        <input
+          type="file"
+          className="hidden"
+          id="resume"
+          onChange={(e) => setFile(e?.target?.files?.[0])}
         />
         <Button
           className="w-full cursor-pointer bg-black p-6 text-base text-white hover:bg-black/80"

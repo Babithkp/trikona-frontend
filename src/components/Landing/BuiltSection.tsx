@@ -1,23 +1,7 @@
 "use client";
 import React from "react";
 import { Button } from "../ui/button";
-
-import Stack from "../ui/Stack";
-import card1 from "../../assets/card1.png";
-import card2 from "../../assets/card2.png";
-import card3 from "../../assets/card3.png";
-import card4 from "../../assets/card4.png";
-import card5 from "../../assets/card5.png";
-import card6 from "../../assets/card6.png";
-
-const images = [
-  { id: 1, img: card1 },
-  { id: 2, img: card2 },
-  { id: 3, img: card3 },
-  { id: 4, img: card4 },
-  { id: 5, img: card5 },
-  { id: 6, img: card6 },
-];
+import Card1 from "../process/Card1";
 
 export default function BuiltSection() {
   return (
@@ -33,11 +17,10 @@ export default function BuiltSection() {
         applications that align with your brand and business goals.
       </p>
 
-      <div className="relative flex h-130 w-250 flex-col items-center max-sm:hidden">
-          <Stack cardsData={images as never[]} />
-      </div>
-      <div className="h-80 w-full   max-sm:flex hidden overflow-hidden">
-          <Stack cardsData={images as never[]} cardDimensions={{ width: 380, height: 300 }} />
+      <div className="relative flex w-full  items-center justify-center mt-10"> 
+         <Card1/>
+         <div className="border-secondary w-[49%] rounded-2xl border-2 p-5 bg-primary max-lg:w-full h-50 absolute -top-5 z-9" ></div>
+         <div className="border-secondary w-[49%] rounded-2xl border-2 p-5 bg-primary max-lg:w-full h-50 absolute -top-10" ></div>
       </div>
 
       <Button className="group relative overflow-hidden rounded-md bg-gradient-to-r from-[#A632F2] to-[#FBA325] px-4 py-2 text-base text-white">

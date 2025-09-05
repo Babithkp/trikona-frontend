@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card1() {
   return (
-    <div className="border-secondary w-[49%] rounded-2xl border-2 p-5 bg-primary max-lg:w-full" >
+    <div className="border-secondary w-[49%] rounded-2xl border-2 p-5 bg-primary max-lg:w-full z-10" >
       <div className="relative p-5">
         <p className="absolute top-0 left-3 z-0 text-8xl font-bold text-[#5E5E5E99]">
           1

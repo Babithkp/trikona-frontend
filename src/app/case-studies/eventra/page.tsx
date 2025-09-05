@@ -134,16 +134,16 @@ export default function Page() {
               }}
             ></div>
           </div>
-          <div className="flex flex-col gap-5">
-            <p
-              className={` ${pageSection === 10 ? "text-black" : "text-slate-400"}`}
+          <div className="flex flex-col gap-5 text-lg">
+          <p
+              className={` ${pageSection <= 0 ? "text-slate-400":"text-black" }`}
             >
               Client Challenge
             </p>
-            <p className="text-slate-400">Our Approach</p>
-            <p className="text-slate-400">Solution</p>
-            <p className="text-slate-400">Results</p>
-            <p className="text-slate-400">What client loved about us</p>
+            <p className={` ${pageSection <= 20 ? "text-slate-400":"text-black" }`}>Our Approach</p>
+            <p className={` ${pageSection <= 40 ? "text-slate-400":"text-black" }`}>Solution</p>
+            <p className={` ${pageSection <= 60 ? "text-slate-400":"text-black" }`}>Results</p>
+            <p className={` ${pageSection <= 90 ? "text-slate-400":"text-black" }`}>What client loved about us</p>
           </div>
         </div>
         <div className="flex w-[60%] flex-col gap-5 max-lg:w-full">

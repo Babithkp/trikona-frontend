@@ -28,7 +28,7 @@ export default function Page() {
         <RightVector />
       </div>
       <div className="sticky top-30 w-[40%] max-sm:relative max-sm:top-0 max-sm:mb-20 max-sm:w-full max-sm:flex-col max-sm:text-center">
-        <h1 className="flex w-1/2 flex-wrap items-center gap-3 text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:w-full max-sm:justify-center max-sm:text-lg">
+        <h1 className="flex w-1/2 flex-wrap items-center gap-3 text-3xl font-bold max-lg:text-2xl max-md:text-xl max-sm:w-full max-sm:justify-center max-sm:text-lg">
           Case Studies
           <span
             style={{
@@ -42,7 +42,7 @@ export default function Page() {
             Behind the Build
           </span>
         </h1>
-        <p className="font-medium">
+        <p className="font-medium text-sm">
           Solving real problems through design and development.
         </p>
       </div>

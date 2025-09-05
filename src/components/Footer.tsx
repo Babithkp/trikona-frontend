@@ -1,11 +1,14 @@
+"use client"
 import React from "react";
 import logo from "../../public/fullLogo-white.png";
 import Image from "next/image";
 import { Instagram } from "lucide-react";
 import Mdi_linkedin from "@/assets/Mdi_linkedin";
 import Prime_twitter from "@/assets/Prime_twitter";
+import { useRouter } from "next/navigation";
 
 export default function Footer() {
+  const router = useRouter();
   return (
     <footer className="mt-10 mb-10 flex justify-between rounded-lg bg-white p-10 text-sm shadow-md max-md:p-5">
       <div className="flex w-full justify-between gap-10 max-lg:flex-col">
@@ -14,7 +17,7 @@ export default function Footer() {
           <p>Trikona Tech</p>
           <p>#54/24, Nethravathy Extension, K.R Puram, Bengaluru - 560036</p>
           <div>
-            <p>trikonaofficial@gmail.com</p>
+          <a href="mailto:buildwithus@trikonatech.com">buildwithus@trikonatech.com</a>
             <p>9620423719</p>
             <p>8197059845</p>
           </div>
@@ -23,8 +26,8 @@ export default function Footer() {
           <div className="flex w-[50%] justify-between gap-5 max-sm:w-full">
             <div className="flex flex-col gap-2">
               <p className="font-bold">Case studies</p>
-              <p className="text-slate-600">Logistic Billing Software</p>
-              <p className="text-slate-600">Eventra</p>
+              <p className="text-slate-600 hover:underline cursor-pointer" onClick={() => router.push("/case-studies/logistics-billing-software")}>Logistic Billing Software</p>
+              <p className="text-slate-600 hover:underline cursor-pointer" onClick={() => router.push("/case-studies/eventra")}>Eventra</p>
             </div>
             <div className="flex flex-col gap-2">
               <p className="font-bold">Careers</p>
@@ -32,14 +35,14 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-2">
               <p className="font-bold">Get in touch</p>
-              <p className="text-slate-600">Contact Us</p>
+              <p className="text-slate-600 hover:underline cursor-pointer" onClick={() => router.push("/contactus")}>Contact Us</p>
             </div>
           </div>
           <div className="flex w-200 flex-col gap-2 max-sm:w-full ">
             <p className="font-bold">Our works</p>
-            <p className="text-slate-600">Deconest Interiors</p>
-            <p className="text-slate-600">Outdoors</p>
-            <p className="text-slate-600">Nexter</p>
+            <a className="text-slate-600 hover:underline" href="https://deconestinteriors.com">Deconest Interiors</a>
+            <a className="text-slate-600 hover:underline" href="https://babithkp.github.io/learning-CSS-Natours">Outdoors</a>
+            <a className="text-slate-600 hover:underline" href="https://babithkp.github.io/learning-CSS-nexter">Nexter</a>
           </div>
         </div>
         <div className="flex flex-col gap-10">

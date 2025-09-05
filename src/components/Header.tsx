@@ -84,7 +84,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="#"
+              href="careers"
               style={{
                 background:
                   pathname === "/careers"

@@ -43,7 +43,7 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
-        reset()
+        reset();
         toast.success(
           "Thanks for contacting us! We will get back to you shortly.",
           {
@@ -63,8 +63,11 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="flex items-stretch gap-5 rounded-lg bg-gradient-to-r from-[#A632F2] to-[#FBA325] p-5 max-lg:flex-col max-md:px-0" id="contact">
-      <div className="relative flex w-[40%] flex-col justify-between rounded-lg bg-[#0000001A] p-5 text-white shadow-xl max-lg:w-full max-lg:h-100">
+    <section
+      className="flex items-stretch gap-5 rounded-lg bg-gradient-to-r from-[#A632F2] to-[#FBA325] p-5 max-lg:flex-col max-md:px-0"
+      id="contact"
+    >
+      <div className="relative flex w-[40%] flex-col justify-between rounded-lg bg-[#0000001A] p-5 text-white shadow-xl max-lg:h-100 max-lg:w-full">
         <p className="w-[80%] text-2xl font-medium">
           Questions? Ideas? Let&apos;s Talk.
         </p>
@@ -75,7 +78,9 @@ export default function ContactForm() {
           className="absolute right-[50%] bottom-[50%] translate-[50%] blur-[5px]"
         />
         <div className="text-xs">
-          <p>trikonaofficial@gmail.com</p>
+          <a href="mailto:buildwithus@trikonatech.com">
+            buildwithus@trikonatech.com
+          </a>
           <p className="flex items-center gap-1">
             Connect with us on Whatsapp
             <MoveRight size={20} />
@@ -112,7 +117,7 @@ export default function ContactForm() {
           />
           <div className="w-[48%] max-lg:w-full">
             <input
-              className="w-full rounded-md bg-[#0000002B] p-3 text-white "
+              className="w-full rounded-md bg-[#0000002B] p-3 text-white"
               placeholder="Email ID"
               type="text"
               {...register("email", { required: true })}
@@ -124,9 +129,10 @@ export default function ContactForm() {
           <textarea
             className="h-30 w-full rounded-md bg-[#0000002B] p-2 px-3 text-white max-lg:w-full"
             placeholder="Message...."
+            {...register("message")}
           />
           <Button
-            className="w-full bg-white text-black hover:bg-black hover:text-white p-6  text-base"
+            className="w-full cursor-pointer bg-white p-6 text-base text-black hover:bg-black hover:text-white"
             disabled={isLoading}
           >
             {isLoading ? " Sending..." : "Submit"}

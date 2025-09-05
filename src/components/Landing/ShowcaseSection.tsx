@@ -12,6 +12,7 @@ import eventraLeftImg from "@/assets/eventra-left.png";
 import eventraRightImg from "@/assets/eventra-right.png";
 import deconestLeftImg from "@/assets/deconest.png";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function ShowcaseSection() {
   const [hoveredSln, setHoveredSln] = useState(false);
@@ -80,10 +81,14 @@ export default function ShowcaseSection() {
                 data structures and algorithms
               </p>
             </div>
-            <Button className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]">
+            <Link
+              className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
+              href={"https://snippedtosketch.vercel.app"}
+              // target="_blank"
+            >
               View Website
               <Image src={logo} alt="logo" width={20} height={20} />
-            </Button>
+            </Link>
           </div>
           <div>
             <Image
@@ -178,10 +183,12 @@ export default function ShowcaseSection() {
                 on creating elegant, functional spaces.
               </p>
             </div>
-            <Button className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]">
+            <Link className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
+            href={"https://deconestinteriors.com"}
+            >
               Visit Website
               <Image src={logo} alt="logo" width={20} height={20} />
-            </Button>
+            </Link>
           </div>
           <div className="max-sm:h-30">
             <Image

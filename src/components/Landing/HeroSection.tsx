@@ -17,7 +17,7 @@ export default function HeroSection() {
       </div>
       <div className="flex flex-col items-center gap-8 pt-30 text-center">
         <h1 className="flex w-200 flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-xl">
-          Future-Proof
+        Design. Build.
           <span
             style={{
               background:
@@ -27,9 +27,9 @@ export default function HeroSection() {
               display: "inline-block",
             }}
           >
-            Websites & Apps
+            Scale .
           </span>
-          Designed to Grow Your Business
+           Digital Products That Work.
         </h1>
         <h3 className="w-200 text-lg max-lg:text-base max-md:w-150 max-md:text-sm max-sm:w-[90%]">
           We craft tailor-made websites and apps with clean UI/UX design,
