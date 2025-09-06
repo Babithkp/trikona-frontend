@@ -38,7 +38,7 @@ export default function Page() {
       <div className="absolute right-0 blur-xl max-md:hidden">
         <RightVector />
       </div>
-      <section className="w-full overflow-hidden rounded-lg border p-5 py-10 shadow-lg max-lg:p-2">
+      <section className="w-full overflow-hidden rounded-lg border p-5  shadow-lg max-lg:p-2">
         <div className="flex items-center justify-between max-lg:flex-col max-lg:items-start max-lg:gap-5">
           <div>
             <p>Case study</p>

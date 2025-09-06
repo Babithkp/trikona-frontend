@@ -62,14 +62,14 @@ export default function Page() {
   };
 
   return (
-    <section className="relative mt-10 flex flex-col items-stretch gap-5 max-lg:flex-col max-md:px-0 overflow-hidden">
+    <section className="relative mt-10 flex flex-col gap-5 max-lg:flex-col max-md:px-0 overflow-hidden items-center">
       <div className="absolute left-0 blur-xl">
         <LeftVector />
       </div>
       <div className="absolute right-0 blur-xl">
         <RightVector />
       </div>
-      <div className="my-5 flex w-full flex-col items-center gap-5">
+      <div className="my-5 flex  flex-col items-center gap-5 w-[80%]">
         <h2 className="flex w-200 flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-xl">
           Get in touch with
           <span
@@ -89,7 +89,7 @@ export default function Page() {
         </p>
       </div>
       <form
-        className="z-10 flex flex-wrap justify-between gap-5"
+        className="z-10 flex flex-wrap justify-between gap-5 w-[80%] max-md:w-full"
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="w-[48%] max-lg:w-full">

@@ -58,14 +58,14 @@ export default function ShowcaseSection() {
             alt="slnLeftImg"
             width={500}
             height={500}
-            className={`absolute top-[30%] left-[35%] rounded-lg ${hoveredSln && "left-[40%]"} transform-all duration-500`}
+            className={`absolute top-[30%] left-[35%] rounded-lg ${hoveredSln && "left-[40%]"} transform-all duration-700`}
           />
           <Image
             src={slnRightImg}
             alt="slnRightImg"
             width={500}
             height={500}
-            className={`absolute top-[30%] right-[35%] rounded-lg ${hoveredSln && "right-[40%]"} transform-all duration-500`}
+            className={`absolute top-[30%] right-[35%] rounded-lg ${hoveredSln && "right-[40%]"} transform-all duration-700`}
           />
         </div>
       </div>
@@ -134,14 +134,14 @@ export default function ShowcaseSection() {
               alt="eventraLeftImg"
               width={200}
               height={500}
-              className={`absolute top-[25%] right-[35%] rounded-lg ${hoveredEventra && "right-[45%]"} transform-all duration-500`}
+              className={`absolute top-[25%] right-[35%] rounded-lg ${hoveredEventra && "right-[45%]"} transform-all duration-700`}
             />
             <Image
               src={eventraRightImg}
               alt="eventraRightImg"
               width={200}
               height={500}
-              className={`absolute top-[25%] left-[35%] rounded-lg ${hoveredEventra && "left-[45%]"} transform-all duration-500`}
+              className={`absolute top-[25%] left-[35%] rounded-lg ${hoveredEventra && "left-[45%]"} transform-all duration-700`}
             />
           </div>
         </div>

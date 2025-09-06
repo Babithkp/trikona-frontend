@@ -41,7 +41,7 @@ export default function Works() {
           {
             height: "auto",
             opacity: 1,
-            duration: 0.4,
+            duration: 0.7,
             ease: "power2.out",
           },
         );

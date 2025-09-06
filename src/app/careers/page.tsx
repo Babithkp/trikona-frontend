@@ -68,7 +68,7 @@ export default function Page() {
   };
 
   return (
-    <section className="relative mt-10 flex flex-col items-stretch gap-5 overflow-hidden max-lg:flex-col max-md:px-5">
+    <section className="relative mt-10 flex flex-col items-center gap-5 overflow-hidden max-lg:flex-col max-md:px-5">
       <div className="absolute left-0 blur-xl">
         <LeftVector />
       </div>
@@ -95,7 +95,7 @@ export default function Page() {
         </p>
       </div>
       <form
-        className="z-10 flex flex-wrap justify-between gap-5"
+        className="z-10 flex flex-wrap justify-between gap-5 w-[80%] max-md:w-full"
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="w-[48%] max-lg:w-full">

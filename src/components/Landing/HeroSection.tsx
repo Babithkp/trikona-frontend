@@ -1,3 +1,4 @@
+"use client";
 import Brain from "@/assets/Brain";
 import { Button } from "../ui/button";
 import Finger from "@/assets/Finger";
@@ -5,8 +6,10 @@ import Code from "@/assets/Code";
 import Strategy from "@/assets/Strategy";
 import LeftVector from "@/assets/LeftVector";
 import RightVector from "@/assets/RightVector";
+import { useRouter } from "next/navigation";
 
 export default function HeroSection() {
+  const router = useRouter();
   return (
     <section className="relative flex flex-col items-center justify-center gap-16 max-lg:overflow-hidden">
       <div className="absolute left-0 blur-xl">
@@ -17,7 +20,7 @@ export default function HeroSection() {
       </div>
       <div className="flex flex-col items-center gap-8 pt-30 text-center">
         <h1 className="flex w-200 flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-xl">
-        Design. Build.
+          Design. Build.
           <span
             style={{
               background:
@@ -29,7 +32,7 @@ export default function HeroSection() {
           >
             Scale .
           </span>
-           Digital Products That Work.
+          Digital Products That Work.
         </h1>
         <h3 className="w-200 text-lg max-lg:text-base max-md:w-150 max-md:text-sm max-sm:w-[90%]">
           We craft tailor-made websites and apps with clean UI/UX design,
@@ -39,13 +42,17 @@ export default function HeroSection() {
         <div className="z-1 flex w-full justify-center gap-5">
           <Button
             variant={"outline"}
-            className="border border-black px-7 hover:bg-black hover:text-white"
+            className="cursor-pointer border border-black px-7 hover:bg-black hover:text-white"
+            onClick={() => router.push("/process")}
           >
             Explore
           </Button>
-          <Button className="group relative overflow-hidden rounded-md bg-gradient-to-r from-[#A632F2] to-[#FBA325] px-4 py-2 text-white">
+          <Button
+            className="group relative cursor-pointer overflow-hidden rounded-md bg-gradient-to-r from-[#A632F2] to-[#FBA325] px-4 py-2 text-white"
+            onClick={() => router.push("/contactus")}
+          >
             <span className="relative z-10">Get in touch</span>
-            <span className="absolute inset-0 z-0 bg-gradient-to-b from-[#A632F2] to-[#FBA325] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+            <span className="absolute inset-0 z-0 bg-gradient-to-b from-[#A632F2] to-[#FBA325] opacity-0 transition-opacity duration-700 group-hover:opacity-100"></span>
           </Button>
         </div>
       </div>
