@@ -1,8 +1,9 @@
+import Faq from "@/components/Faq";
 import BuiltSection from "@/components/Landing/BuiltSection";
-import ContactForm from "@/components/Landing/ContactForm";
 import HeroSection from "@/components/Landing/HeroSection";
 import ShowcaseSection from "@/components/Landing/ShowcaseSection";
 import Works from "@/components/Landing/Works";
+import RedirectToContact from "@/components/RedirectToContact";
 export default function Home() {
   return (
     <main>
@@ -10,7 +11,8 @@ export default function Home() {
       <Works />
       <BuiltSection/>
       <ShowcaseSection/>
-      <ContactForm/>
+      <Faq/>
+      <RedirectToContact/>
     </main>
   );
 }

@@ -1,13 +1,15 @@
-import ContactForm from "@/components/Landing/ContactForm";
+import Faq from "@/components/Faq";
 import HeroSection from "@/components/process/HeroSection";
 import ProcessCards from "@/components/process/ProcessCards";
+import RedirectToContact from "@/components/RedirectToContact";
 
 export default function page() {
   return (
     <main>
-        <HeroSection/>
-        <ProcessCards/>
-        <ContactForm/>
+      <HeroSection />
+      <ProcessCards />
+      <Faq />
+      <RedirectToContact />
     </main>
-  )
+  );
 }

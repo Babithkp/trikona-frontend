@@ -30,7 +30,7 @@ export default function Header() {
             className="w-50 max-md:w-40 max-sm:w-30"
           />
         </Link>
-        <ul className="z-1 flex w-[30%] justify-between gap-5 text-lg font-[600] max-lg:w-fit max-lg:text-base max-sm:hidden">
+        <ul className="z-1 flex justify-between gap-5 text-lg font-[600] max-lg:w-fit max-lg:text-base max-sm:hidden">
           <li>
             <Link
               href="/process"
@@ -50,23 +50,39 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="/case-studies"
+              href="/portfolio"
               style={{
                 background:
-                  pathname === "/case-studies"
+                  pathname === "/portfolio"
                     ? "linear-gradient(90.79deg, #A632F2 0.68%, #FBA325 99.34%)"
                     : "",
-                WebkitBackgroundClip:
-                  pathname === "/case-studies" ? "text" : "",
+                WebkitBackgroundClip: pathname === "/portfolio" ? "text" : "",
                 WebkitTextFillColor:
-                  pathname === "/case-studies" ? "transparent" : "",
-                display: pathname === "/case-studies" ? "inline-block" : "",
+                  pathname === "/portfolio" ? "transparent" : "",
+                display: pathname === "/portfolio" ? "inline-block" : "",
               }}
             >
-              Case Studies
+              Portfolio
             </Link>
           </li>
           <li>
+            <Link
+              href="/services"
+              style={{
+                background:
+                  pathname === "/services"
+                    ? "linear-gradient(90.79deg, #A632F2 0.68%, #FBA325 99.34%)"
+                    : "",
+                WebkitBackgroundClip: pathname === "/services" ? "text" : "",
+                WebkitTextFillColor:
+                  pathname === "/services" ? "transparent" : "",
+                display: pathname === "/services" ? "inline-block" : "",
+              }}
+            >
+              Services
+            </Link>
+          </li>
+          {/* <li>
             <Link
               href="#"
               style={{
@@ -81,7 +97,7 @@ export default function Header() {
             >
               Blog
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               href="careers"
@@ -100,7 +116,10 @@ export default function Header() {
             </Link>
           </li>
         </ul>
-        <Link href={"/contactus"} className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-base text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325] max-sm:hidden max-sm:px-1 max-sm:text-xs z-1" >
+        <Link
+          href={"/contactus"}
+          className="z-1 flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-base text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325] max-sm:hidden max-sm:px-1 max-sm:text-xs"
+        >
           Contact Us
         </Link>
         <button

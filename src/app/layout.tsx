@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="flex justify-center scroll-smooth bg-[#F5F5F5] ">
+    <html lang="en" className="flex justify-center scroll-smooth bg-[#F5F5F5]">
       <body
         className={`${interSans.variable} max-w-[1520px] bg-[#F5F5F5] px-5 antialiased max-lg:px-0`}
       >
