@@ -34,7 +34,7 @@ export default function ShowcaseSection() {
           <Button
             className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
             onClick={() =>
-              navigate.push("/case-studies/logistics-billing-software")
+              navigate.push("/portfolio/logistics-billing-software")
             }
           >
             Case Study
@@ -111,7 +111,7 @@ export default function ShowcaseSection() {
             </div>
             <Button
               className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
-              onClick={() => navigate.push("/case-studies/eventra")}
+              onClick={() => navigate.push("/portfolio/eventra")}
             >
               Case Study
               <Image src={logo} alt="logo" width={20} height={20} />

@@ -158,7 +158,7 @@ export default function Header() {
               Our Process
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               href="/case-studies"
               style={{
@@ -176,7 +176,7 @@ export default function Header() {
             >
               Case Studies
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               href="/blog"

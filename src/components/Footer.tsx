@@ -26,8 +26,8 @@ export default function Footer() {
           <div className="flex w-[50%] justify-between gap-5 max-sm:w-full">
             <div className="flex flex-col gap-2">
               <p className="font-bold">Case studies</p>
-              <p className="text-slate-600 hover:underline cursor-pointer" onClick={() => router.push("/case-studies/logistics-billing-software")}>Logistic Billing Software</p>
-              <p className="text-slate-600 hover:underline cursor-pointer" onClick={() => router.push("/case-studies/eventra")}>Eventra</p>
+              <p className="text-slate-600 hover:underline cursor-pointer" onClick={() => router.push("/portfolio/logistics-billing-software")}>Logistic Billing Software</p>
+              <p className="text-slate-600 hover:underline cursor-pointer" onClick={() => router.push("/portfolio/eventra")}>Eventra</p>
             </div>
             <div className="flex flex-col gap-2">
               <p className="font-bold">Careers</p>
