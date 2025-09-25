@@ -19,7 +19,7 @@ export default function HeroSection() {
         <RightVector />
       </div>
       <div className="flex flex-col items-center gap-8 pt-30 text-center">
-        <h1 className="flex w-200 flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-xl">
+        <h1 className="flex w-200 flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-2xl">
           Design. Build.
           <span
             style={{
@@ -56,29 +56,29 @@ export default function HeroSection() {
           </Button>
         </div>
       </div>
-      <div className="flex w-[70%] flex-wrap items-start justify-between gap-5 px-20 max-lg:w-full max-lg:px-5 max-md:px-0">
-        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm">
+      <div className="flex w-[70%] flex-wrap items-start justify-between gap-5 px-20 max-lg:w-full max-lg:px-5 max-md:px-0 max-sm:pb-10">
+        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm max-sm:gap-1">
           <Brain />
           <p className="font-[600]">Design That Thinks</p>
           <p className="text-sm font-light max-sm:text-xs">
             Ideas before interfaces. We solve before we style.
           </p>
         </div>
-        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm">
+        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm max-sm:gap-1">
           <Finger />
           <p className="font-[600]">Tech That Feels</p>
           <p className="text-sm font-light max-sm:text-xs">
             Interfaces that understand users, not just instruct them.
           </p>
         </div>
-        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm">
+        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm max-sm:gap-1">
           <Code />
           <p className="font-[600]">Code That Clicks</p>
           <p className="text-sm font-light max-sm:text-xs">
             Structured, scalable, and clean — every line matters.
           </p>
         </div>
-        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm">
+        <div className="flex w-45 flex-col items-center gap-3 text-center text-lg max-sm:text-sm max-sm:gap-1">
           <Strategy />
           <p className="font-[600]">Strategy That Sticks</p>
           <p className="text-sm font-light max-sm:text-xs">

@@ -12,7 +12,7 @@ export default function HeroSection() {
         <RightVector />
       </div>
       <div className="flex flex-col items-center gap-8 pt-30 text-center max-md:pt-0 ">
-        <h1 className="flex w-200 flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-xl">
+        <h1 className="flex w-200 flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-2xl">
           Our
           <span
             style={{

@@ -51,7 +51,7 @@ export default function Works() {
   );
 
   return (
-    <section className="flex flex-col items-center gap-5  py-20 max-lg:px-5 max-md:px-0 max-sm:py-5">
+    <section className="flex flex-col items-center gap-5  py-20 max-lg:px-5  max-sm:py-5 ">
       <div className="pb-5">
         <p className="text-center text-slate-600">What we offer</p>
         <h4 className="text-3xl font-bold">Scope of work</h4>

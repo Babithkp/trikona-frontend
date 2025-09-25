@@ -82,22 +82,6 @@ export default function Header() {
               Services
             </Link>
           </li>
-          {/* <li>
-            <Link
-              href="#"
-              style={{
-                background:
-                  pathname === "/blog"
-                    ? "linear-gradient(90.79deg, #A632F2 0.68%, #FBA325 99.34%)"
-                    : "",
-                WebkitBackgroundClip: pathname === "/blog" ? "text" : "",
-                WebkitTextFillColor: pathname === "/blog" ? "transparent" : "",
-                display: pathname === "/blog" ? "inline-block" : "",
-              }}
-            >
-              Blog
-            </Link>
-          </li> */}
           <li>
             <Link
               href="careers"
@@ -131,9 +115,9 @@ export default function Header() {
       </nav>
       <Drawer
         title={
-          <div className="flex justify-end">
+          <Link href={"/"} className="flex justify-end" onClick={onClose}>
             <Image src={logo} alt="logo" height={100} width={150} />
-          </div>
+          </Link>
         }
         closable={{ "aria-label": "Close Button" }}
         onClose={onClose}
@@ -142,6 +126,7 @@ export default function Header() {
         <ul className="z-1 flex flex-col justify-between gap-5 text-base font-[600] text-black">
           <li>
             <Link
+              onClick={onClose}
               href="/process"
               style={{
                 background:
@@ -158,45 +143,46 @@ export default function Header() {
               Our Process
             </Link>
           </li>
-          {/* <li>
-            <Link
-              href="/case-studies"
-              style={{
-                background:
-                  pathname === "/case-studies"
-                    ? "linear-gradient(90.79deg, #A632F2 0.68%, #FBA325 99.34%)"
-                    : "",
-                WebkitBackgroundClip:
-                  pathname === "/case-studies" ? "text" : "",
-                WebkitTextFillColor:
-                  pathname === "/case-studies" ? "transparent" : "",
-                display: pathname === "/case-studies" ? "inline-block" : "",
-                color: "black",
-              }}
-            >
-              Case Studies
-            </Link>
-          </li> */}
           <li>
             <Link
-              href="/blog"
+              onClick={onClose}
+              href="/portfolio"
               style={{
                 background:
-                  pathname === "/blog"
+                  pathname === "/portfolio"
                     ? "linear-gradient(90.79deg, #A632F2 0.68%, #FBA325 99.34%)"
                     : "",
-                WebkitBackgroundClip: pathname === "/blog" ? "text" : "",
-                WebkitTextFillColor: pathname === "/blog" ? "transparent" : "",
-                display: pathname === "/blog" ? "inline-block" : "",
+                WebkitBackgroundClip: pathname === "/portfolio" ? "text" : "",
+                WebkitTextFillColor: pathname === "/portfolio" ? "transparent" : "",
+                display: pathname === "/portfolio" ? "inline-block" : "",
                 color: "black",
               }}
             >
-              Blog
+              Portfolio
             </Link>
           </li>
           <li>
             <Link
-              href="#"
+              onClick={onClose}
+              href="/services"
+              style={{
+                background:
+                  pathname === "/services"
+                    ? "linear-gradient(90.79deg, #A632F2 0.68%, #FBA325 99.34%)"
+                    : "",
+                WebkitBackgroundClip: pathname === "/services" ? "text" : "",
+                WebkitTextFillColor: pathname === "/services" ? "transparent" : "",
+                display: pathname === "/services" ? "inline-block" : "",
+                color: "black",
+              }}
+            >
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={onClose}
+              href="/careers"
               style={{
                 background:
                   pathname === "/careers"

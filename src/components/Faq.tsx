@@ -9,7 +9,7 @@ import {
 export default function Faq() {
   return (
     <section className="flex flex-col gap-10 mb-10">
-      <h3 className="text-center text-3xl font-bold">
+      <h3 className="text-center text-3xl font-bold max-md:text-2xl">
         Frequently Asked Questions
       </h3>
       <Accordion type="single" collapsible>

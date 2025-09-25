@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <main>
       <section className="my-10 flex w-full flex-col items-center gap-5">
-        <h1 className="flex w-200 flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-xl">
+        <h1 className="flex flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-2xl">
           Services we
           <span
             style={{
@@ -31,7 +31,7 @@ export default function Page() {
             Offer
           </span>
         </h1>
-        <p className="w-1/2 text-center text-sm font-medium">
+        <p className="w-1/2 text-center text-sm font-medium max-md:w-[90%]">
           We provide professional branding, app development, and MVP services
           crafting user-focused designs and scalable digital products for
           businesses of all sizes.
@@ -44,8 +44,8 @@ export default function Page() {
           <span className="absolute inset-0 z-0 bg-gradient-to-b from-[#A632F2] to-[#FBA325] opacity-0 transition-opacity duration-700 group-hover:opacity-100"></span>
         </Button>
       </section>
-      <section className="mb-10 flex flex-wrap items-center justify-between gap-10">
-        <div className="bg-primary flex w-180 flex-col gap-2 rounded-lg p-5">
+      <section className="mb-10 grid w-full grid-cols-2 items-center justify-between gap-10 max-md:grid-cols-1 max-md:p-5">
+        <div className="bg-primary flex flex-col gap-2 rounded-lg p-5">
           <div className="flex w-full justify-center rounded-lg border-6 border-[#FCEFFF] bg-white">
             <Image
               src={brandImg}
@@ -61,7 +61,7 @@ export default function Page() {
             and guidelines that align with your business goals.
           </p>
         </div>
-        <div className="bg-primary flex w-180 flex-col gap-2 rounded-lg p-5">
+        <div className="bg-primary flex flex-col gap-2 rounded-lg p-5">
           <div className="flex w-full justify-center rounded-lg border-6 border-[#FCEFFF] bg-white">
             <Image
               src={designImg}
@@ -77,7 +77,7 @@ export default function Page() {
             audience and boost conversions.
           </p>
         </div>
-        <div className="bg-primary flex w-180 flex-col gap-2 rounded-lg p-5">
+        <div className="bg-primary flex flex-col gap-2 rounded-lg p-5">
           <div className="flex w-full justify-center rounded-lg border-6 border-[#FCEFFF] bg-white">
             <Image
               src={websiteImg}
@@ -93,7 +93,7 @@ export default function Page() {
             high-performance sites that bring your ideas to life.
           </p>
         </div>
-        <div className="bg-primary flex w-180 flex-col gap-2 rounded-lg p-5">
+        <div className="bg-primary flex flex-col gap-2 rounded-lg p-5">
           <div className="flex w-full justify-center rounded-lg border-6 border-[#FCEFFF] bg-white">
             <Image
               src={mobileImg}
@@ -109,7 +109,7 @@ export default function Page() {
             mobile solutions.
           </p>
         </div>
-        <div className="bg-primary flex w-180 flex-col gap-2 rounded-lg p-5">
+        <div className="bg-primary flex flex-col gap-2 rounded-lg p-5">
           <div className="flex w-full justify-center rounded-lg border-6 border-[#FCEFFF] bg-white">
             <Image
               src={desktopImg}
@@ -126,7 +126,7 @@ export default function Page() {
             platforms.
           </p>
         </div>
-        <div className="bg-primary flex w-180 flex-col gap-2 rounded-lg p-5">
+        <div className="bg-primary flex flex-col gap-2 rounded-lg p-5">
           <div className="flex w-full justify-center rounded-lg border-6 border-[#FCEFFF] bg-white">
             <Image
               src={customImg}

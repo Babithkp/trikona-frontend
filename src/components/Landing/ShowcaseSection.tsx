@@ -20,7 +20,7 @@ export default function ShowcaseSection() {
   const navigate = useRouter();
 
   return (
-    <section className="flex flex-col items-center gap-5 py-20 max-lg:px-5 max-md:px-0">
+    <section className="flex flex-col items-center gap-5 py-20 max-lg:px-5 max-md:px-2">
       <div className="flex w-full overflow-hidden rounded-lg bg-[#B2D5F2] p-5 shadow-md max-lg:flex-col">
         <div className="flex w-[28%] flex-col gap-9 max-lg:w-full">
           <div className="flex flex-col gap-5">

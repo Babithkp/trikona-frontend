@@ -8,7 +8,7 @@ export default function Card1() {
           1
         </p>
         <video
-          className="relative z-10 mt-4 ml-5 w-full rounded-xl"
+          className="relative z-10 mt-4 ml-5 w-full rounded-xl max-md:h-50 bg-white" 
           muted
           loop
           autoPlay

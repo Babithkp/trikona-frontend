@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 export default function BuiltSection() {
   const router = useRouter();
   return (
-    <section className="flex flex-col items-center gap-5 py-20">
+    <section className="flex flex-col items-center gap-5 py-20 p-5">
       <div>
         <p className="text-center text-slate-600">Built for What’s Next</p>
         <h4 className="text-3xl font-bold">The Trikona way</h4>
