@@ -5,10 +5,10 @@ import React from "react";
 export default function HeroSection() {
   return (
     <section className="relative flex flex-col items-center justify-center gap-16 max-lg:overflow-hidden max-md:py-20">
-      <div className="absolute left-0 blur-xl max-md:hidden">
+      <div className="absolute top-5 left-0 blur-xl max-md:hidden">
         <LeftVector />
       </div>
-      <div className="absolute right-0 blur-xl max-md:hidden">
+      <div className="absolute top-2 right-0 blur-xl max-md:hidden">
         <RightVector />
       </div>
       <div className="flex flex-col items-center gap-8 pt-30 text-center max-md:pt-0 ">

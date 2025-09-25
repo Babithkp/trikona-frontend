@@ -8,7 +8,7 @@ export default function Card4() {
         <p className="absolute -top-1 -left-3 z-0 text-8xl font-bold text-[#5E5E5E99]">
           4
         </p>
-        <div className="relative z-10 mt-9 ml-5 rounded-xl bg-white max-md:h-50">
+        <div className="relative z-10 mt-9 ml-5 rounded-xl bg-white max-md:h-50 h-75">
           <Image
             width={500}
             height={1000}
