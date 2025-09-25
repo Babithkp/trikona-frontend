@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <main>
       <section className="my-10 flex w-full flex-col items-center gap-5">
-        <h1 className="flex flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-2xl">
+        <h1 className="flex flex-wrap items-center justify-center gap-3 py-10 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-2xl">
           Services we
           <span
             style={{
@@ -31,7 +31,7 @@ export default function Page() {
             Offer
           </span>
         </h1>
-        <p className="w-1/2 text-center text-sm font-medium max-md:w-[90%]">
+        <p className="w-1/2 text-center  font-medium max-md:w-[90%]">
           We provide professional branding, app development, and MVP services
           crafting user-focused designs and scalable digital products for
           businesses of all sizes.

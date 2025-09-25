@@ -32,7 +32,7 @@ export default function Page() {
   return (
     <>
       <section className="relative my-10 flex w-full flex-col items-center gap-5">
-        <h1 className="flex flex-wrap items-center justify-center gap-3 text-center text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-2xl">
+        <h1 className="flex flex-wrap items-center py-10 justify-center gap-3 text-center text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-2xl">
           Our
           <span
             style={{
@@ -47,7 +47,7 @@ export default function Page() {
           </span>
           UI/UX Design, Web Development & Branding Projects
         </h1>
-        <p className="w-1/2 text-center text-sm font-medium max-md:w-[90%]">
+        <p className="w-1/2 text-center  font-medium max-md:w-[90%]">
           Explore how our Bengaluru-based agency delivers UI/UX design, website
           development, and branding solutions that help businesses grow.
         </p>
@@ -102,10 +102,7 @@ export default function Page() {
             a logistics and freight forwarding company, faced inefficiencies and
             inaccuracies in managing operational data such as LR creation,
             freight memos, customer billing, vendor payments, and branch-level
-            cash flow. Their manual record-keeping and outdated Excel-based
-            system caused delays, lack of centralized visibility, and human
-            errors, leading to poor financial tracking and low operational
-            efficiency.
+            cash flow.
           </p>
           <Button
             className="z-1 w-fit cursor-pointer bg-black transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
@@ -164,8 +161,7 @@ export default function Page() {
             Eventra came to us with a clear vision — to build a modern platform
             that simplifies event creation, ticketing, and attendee management.
             Starting from scratch, we partnered closely with the founders to
-            transform their idea into a fully functional digital product — from
-            wireframes and user flows to development and deployment.
+            transform their idea into a fully functional digital product.
           </p>
           <Button
             className="z-1 w-fit cursor-pointer bg-black transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
@@ -248,8 +244,11 @@ export default function Page() {
           </div>
           <p className="text-2xl font-bold max-sm:text-xl">Snippet2Sketch</p>
           <p className="text-sm">
-            Snippet2Sketch is an interactive platform that visually explains
-            data structures and algorithms
+            Snippet2Sketch is an interactive platform that transforms code into
+            visual explanations, helping learners easily understand data
+            structures and algorithms. It bridges the gap between theory and
+            practice by turning abstract concepts into clear,
+            intuitive sketches.
           </p>
           <Button
             className="z-1 w-fit cursor-pointer bg-black transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
