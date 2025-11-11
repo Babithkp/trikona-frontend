@@ -107,7 +107,7 @@ export default function Page() {
           <Button
             className="z-1 w-fit cursor-pointer bg-black transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
             onClick={() =>
-              navigate.push("/case-studies/logistics-billing-software")
+              navigate.push("/portfolio/logistics-billing-software")
             }
           >
             Case Study
@@ -165,7 +165,7 @@ export default function Page() {
           </p>
           <Button
             className="z-1 w-fit cursor-pointer bg-black transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
-            onClick={() => navigate.push("/case-studies/eventra")}
+            onClick={() => navigate.push("/portfolio/eventra")}
           >
             Case Study
             <Image src={logo} alt="logo" width={20} height={20} />
