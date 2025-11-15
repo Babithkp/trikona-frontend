@@ -13,7 +13,7 @@ export default function Card6() {
           height={0}
           src="/Scene-7.gif"
           alt="Discovery and Onboarding"
-          className="relative z-10 mt-9 ml-5 h-[120%]  w-[95%] rounded-xl bg-white object-cover max-md:h-[90%]"
+          className="relative z-10 mt-9 ml-5 w-[95%] rounded-xl bg-white object-cover h-56 md:h-85"
         />
       </div>
       <div>

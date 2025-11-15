@@ -31,8 +31,8 @@ export default function Page() {
   const navigate = useRouter();
   return (
     <>
-      <section className="relative my-10 flex w-full flex-col items-center gap-5">
-        <h1 className="flex flex-wrap items-center py-10 justify-center gap-3 text-center text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-2xl">
+      <section className="relative my-10 flex w-full flex-col items-center">
+        <h1 className="flex flex-wrap items-center pt-10 pb-3 justify-center gap-3 text-center text-6xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-[85%] max-sm:text-4xl md:px-20">
           Our
           <span
             style={{
@@ -47,21 +47,21 @@ export default function Page() {
           </span>
           UI/UX Design, Web Development & Branding Projects
         </h1>
-        <p className="w-1/2 text-center  font-medium max-md:w-[90%]">
+        <p className="w-3/4 text-center text-xl font-medium max-md:w-[90%]">
           Explore how our Bengaluru-based agency delivers UI/UX design, website
           development, and branding solutions that help businesses grow.
         </p>
         <Button
-          className="group relative cursor-pointer overflow-hidden rounded-md bg-gradient-to-r from-[#A632F2] to-[#FBA325] px-4 py-2 text-white"
+          className="group relative cursor-pointer overflow-hidden rounded-md bg-gradient-to-r from-[#A632F2] to-[#FBA325] px-8 py-6 text-md my-5 text-white"
           onClick={() => navigate.push("/contactus")}
         >
           <span className="relative z-10">Get in touch</span>
           <span className="absolute inset-0 z-0 bg-gradient-to-b from-[#A632F2] to-[#FBA325] opacity-0 transition-opacity duration-700 group-hover:opacity-100"></span>
         </Button>
-        <div className="absolute top-0 left-0 blur-xl max-md:hidden">
+        <div className="absolute top-0 left-0 blur-xl">
           <LeftVector />
         </div>
-        <div className="absolute right-0 blur-xl max-md:hidden">
+        <div className="absolute right-0 blur-xl hidden md:block">
           <RightVector />
         </div>
       </section>

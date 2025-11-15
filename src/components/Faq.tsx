@@ -9,13 +9,13 @@ import {
 export default function Faq() {
   return (
     <section className="flex flex-col gap-10 mb-10">
-      <h3 className="text-center text-3xl font-bold max-md:text-2xl">
+      <h3 className="text-center text-4xl font-bold max-md:text-2xl">
         Frequently Asked Questions
       </h3>
       <Accordion type="single" collapsible>
         <AccordionItem
           value="item-1"
-          className="item-center flex w-full gap-5 px-10 py-3"
+          className="item-center flex w-full gap-5 px-10 py-3 hover:bg-[#F2EBFD]"
         >
           <p className="mt-3 text-3xl max-md:text-2xl font-bold text-[#9D96A8]">01</p>
           <div className="w-full">
@@ -30,7 +30,7 @@ export default function Faq() {
         </AccordionItem>
         <AccordionItem
           value="item-2"
-          className="item-center flex w-full gap-5 px-10 py-3"
+          className="item-center flex w-full gap-5 px-10 py-3 hover:bg-[#F2EBFD]"
         >
           <p className="mt-3 text-3xl max-md:text-2xl font-bold text-[#9D96A8]">02</p>
           <div className="w-full">
@@ -45,7 +45,7 @@ export default function Faq() {
         </AccordionItem>
         <AccordionItem
           value="item-3"
-          className="item-center flex w-full gap-5 px-10 py-3"
+          className="item-center flex w-full gap-5 px-10 py-3 hover:bg-[#F2EBFD]"
         >
           <p className="mt-3 text-3xl max-md:text-2xl font-bold text-[#9D96A8]">03</p>
           <div className="w-full">
@@ -60,7 +60,7 @@ export default function Faq() {
         </AccordionItem>
         <AccordionItem
           value="item-4"
-          className="item-center flex w-full gap-5 px-10 py-3"
+          className="item-center flex w-full gap-5 px-10 py-3 hover:bg-[#F2EBFD]"
         >
           <p className="mt-3 text-3xl max-md:text-2xl font-bold text-[#9D96A8]">04</p>
           <div className="w-full">

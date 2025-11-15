@@ -13,11 +13,10 @@ export default function Footer() {
     <footer className="mt-10  flex justify-between rounded-lg bg-white p-10 text-sm shadow-md max-md:p-5 ">
       <div className="flex w-full justify-between gap-10 max-lg:flex-col">
         <div className="flex w-55 flex-col gap-2">
-          <Image src={logo} alt="logo" width={150} height={100} />
-          <p>Trikona Tech</p>
+          <Image src={logo} alt="logo" width={190} height={100} />
           <p>#54/24, Nethravathy Extension, K.R Puram, Bengaluru - 560036</p>
           <div>
-            <a href="mailto:buildwithus@trikonatech.com">
+            <a href="mailto:buildwithus@trikonatech.com" className="font-semibold">
               buildwithus@trikonatech.com
             </a>
             <p>9620423719</p>
@@ -25,7 +24,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex w-[60%] flex-wrap justify-between gap-5 max-sm:w-full">
-          <div className="flex w-[50%] justify-between gap-5 max-sm:w-full">
+          <div className="flex w-[80%] justify-between gap-5 max-sm:w-full">
             <div className="flex flex-col gap-2">
               <p className="font-bold">Case studies</p>
               <p
@@ -44,6 +43,27 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex flex-col gap-2">
+              <p className="font-bold">Our works</p>
+              <a
+                className="text-slate-600 hover:underline"
+                href="https://deconestinteriors.com"
+              >
+                Deconest Interiors
+              </a>
+              <a
+                className="text-slate-600 hover:underline"
+                href="https://babithkp.github.io/learning-CSS-Natours"
+              >
+                Outdoors
+              </a>
+              <a
+                className="text-slate-600 hover:underline"
+                href="https://babithkp.github.io/learning-CSS-nexter"
+              >
+                Nexter
+              </a>
+            </div>
+            <div className="flex flex-col gap-2">
               <p className="font-bold">Careers</p>
               <p className="text-slate-600">We are hiring!</p>
             </div>
@@ -57,27 +77,6 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="flex w-200 flex-col gap-2 max-sm:w-full">
-            <p className="font-bold">Our works</p>
-            <a
-              className="text-slate-600 hover:underline"
-              href="https://deconestinteriors.com"
-            >
-              Deconest Interiors
-            </a>
-            <a
-              className="text-slate-600 hover:underline"
-              href="https://babithkp.github.io/learning-CSS-Natours"
-            >
-              Outdoors
-            </a>
-            <a
-              className="text-slate-600 hover:underline"
-              href="https://babithkp.github.io/learning-CSS-nexter"
-            >
-              Nexter
-            </a>
-          </div>
         </div>
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-3">
@@ -86,7 +85,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-3">
             <p className="font-medium">Follow us on</p>
-            <div className="flex gap-3">
+            <div className="flex gap-5">
               <a
                 href="https://www.instagram.com/trikonaofficial"
                 target="_blank"

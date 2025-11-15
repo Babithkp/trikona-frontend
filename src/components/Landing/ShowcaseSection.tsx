@@ -21,9 +21,9 @@ export default function ShowcaseSection() {
 
   return (
     <section className="flex flex-col items-center gap-5 py-20 max-lg:px-5 max-md:px-2">
-      <div className="flex w-full overflow-hidden rounded-lg bg-[#B2D5F2] p-5 shadow-md max-lg:flex-col">
-        <div className="flex w-[28%] flex-col gap-9 max-lg:w-full">
-          <div className="flex flex-col gap-5">
+      <div className="flex w-full overflow-hidden rounded-lg bg-[#B2D5F2] p-8 shadow-md max-lg:flex-col">
+        <div className="flex w-[28%] flex-col justify-center gap-5 max-lg:w-full">
+          <div className="flex flex-col gap-5 py-6">
             <p className="text-3xl font-bold">Logistics Billing Software</p>
             <p>
               This custom-built logistics billing software streamlines
@@ -32,7 +32,7 @@ export default function ShowcaseSection() {
             </p>
           </div>
           <Button
-            className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
+            className="flex w-fit items-center gap-2 rounded-md bg-black px-8 py-6 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
             onClick={() =>
               navigate.push("/portfolio/logistics-billing-software")
             }
@@ -71,7 +71,7 @@ export default function ShowcaseSection() {
       </div>
       <div className="flex w-full justify-between gap-5 max-lg:flex-col">
         <div className="relative flex w-1/2 gap-5 overflow-hidden rounded-lg bg-[#E7EEFF] p-5 shadow-md max-lg:w-full">
-          <div className="flex w-[50%] flex-col justify-between gap-9">
+          <div className="flex w-[50%] flex-col justify-center gap-10">
             <div className="flex flex-col gap-5">
               <p className="text-3xl font-bold max-lg:text-2xl">
                 Snippet2Sketch
@@ -82,7 +82,7 @@ export default function ShowcaseSection() {
               </p>
             </div>
             <Link
-              className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
+              className="flex w-fit items-center gap-2 rounded-md bg-black px-8 py-3 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
               href={"https://snippedtosketch.vercel.app"}
               // target="_blank"
             >
@@ -94,13 +94,13 @@ export default function ShowcaseSection() {
             <Image
               src={snippetImg}
               alt="snippetImg"
-              width={300}
-              className="absolute -bottom-5 rounded-lg"
+              width={400}
+              className="absolute top-10 rounded-lg"
             />
           </div>
         </div>
         <div className="relative flex w-1/2 gap-5 overflow-hidden rounded-lg bg-[#E8FBF4] p-5 shadow-md max-lg:w-full max-sm:flex-col">
-          <div className="flex w-[50%] flex-col gap-9 max-sm:w-full">
+          <div className="flex w-[50%] flex-col justify-center gap-5 max-sm:w-full">
             <div className="flex flex-col gap-5">
               <p className="text-3xl font-bold">Eventra -App</p>
               <p className="max-lg:text-sm">
@@ -110,7 +110,7 @@ export default function ShowcaseSection() {
               </p>
             </div>
             <Button
-              className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
+              className="flex w-fit items-center gap-2 rounded-md bg-black px-8 py-6 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
               onClick={() => navigate.push("/portfolio/eventra")}
             >
               Case Study
@@ -173,7 +173,7 @@ export default function ShowcaseSection() {
           </div>
         </div>
         <div className="relative flex w-1/2 gap-5 overflow-hidden rounded-lg border p-5 shadow-md max-lg:w-full max-sm:flex-col">
-          <div className="flex w-[50%] flex-col justify-between gap-9 max-sm:w-full">
+          <div className="flex w-[50%] flex-col justify-center gap-9 max-sm:w-full">
             <div className="flex flex-col gap-5">
               <p className="text-3xl font-bold max-lg:text-2xl">
                 Deconest Interiors
@@ -183,7 +183,7 @@ export default function ShowcaseSection() {
                 on creating elegant, functional spaces.
               </p>
             </div>
-            <Link className="flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
+            <Link className="flex w-fit items-center gap-2 rounded-md bg-black px-8 py-3 text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325]"
             href={"https://deconestinteriors.com"}
             >
               Visit Website
@@ -194,8 +194,8 @@ export default function ShowcaseSection() {
             <Image
               src={deconestLeftImg}
               alt="deconestLeftImg"
-              width={300}
-              className="absolute right-10 -bottom-5 rounded-lg"
+              width={350}
+              className="absolute -right-10 top-10 rounded-lg"
             />
           </div>
         </div>

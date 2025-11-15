@@ -8,6 +8,7 @@ export default function RightVector() {
       height="1003"
       viewBox="0 0 778 1003"
       fill="none"
+      className="w-full"
     >
       <g filter="url(#filter0_f_608_29)">
         <path
