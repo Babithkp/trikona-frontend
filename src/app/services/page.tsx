@@ -1,4 +1,6 @@
 "use client";
+import LeftVector from "@/assets/LeftVector";
+import RightVector from "@/assets/RightVector";
 import Faq from "@/components/Faq";
 import RedirectToContact from "@/components/RedirectToContact";
 import React from "react";
@@ -16,8 +18,14 @@ export default function Page() {
   const router = useRouter();
   return (
     <main>
-      <section className="my-10 flex w-full flex-col items-center gap-5">
-        <h1 className="flex flex-wrap items-center justify-center gap-3 py-10 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-2xl">
+      <section className="my-10 flex w-full flex-col items-center">
+        <div className="absolute left-0 blur-xl">
+          <LeftVector />
+        </div>
+        <div className="absolute right-0 blur-xl hidden md:block">
+          <RightVector />
+        </div>
+        <h1 className="flex flex-wrap items-center justify-center gap-3 pt-10 pb-3 text-6xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-4xl">
           Services we
           <span
             style={{
@@ -31,13 +39,13 @@ export default function Page() {
             Offer
           </span>
         </h1>
-        <p className="w-1/2 text-center  font-medium max-md:w-[90%]">
+        <p className="w-3/4 text-center md:text-xl font-medium max-md:w-[90%]">
           We provide professional branding, app development, and MVP services
           crafting user-focused designs and scalable digital products for
           businesses of all sizes.
         </p>
         <Button
-          className="group relative cursor-pointer overflow-hidden rounded-md bg-gradient-to-r from-[#A632F2] to-[#FBA325] px-4 py-2 text-white"
+          className="group relative cursor-pointer overflow-hidden rounded-md bg-gradient-to-r from-[#A632F2] to-[#FBA325] px-8 py-6 text-white mt-5"
           onClick={() => router.push("/contactus")}
         >
           <span className="relative z-10">Get in touch</span>
@@ -45,7 +53,7 @@ export default function Page() {
         </Button>
       </section>
       <section className="mb-10 grid w-full grid-cols-2 items-center justify-between gap-10 max-md:grid-cols-1 max-md:p-5">
-        <div className="bg-primary flex flex-col gap-2 rounded-lg p-5">
+        <div className="bg-primary flex flex-col gap-2 rounded-lg p-5 z-10">
           <div className="flex w-full justify-center rounded-lg border-6 border-[#FCEFFF] bg-white">
             <Image
               src={brandImg}
@@ -55,13 +63,13 @@ export default function Page() {
               className="h-80"
             />
           </div>
-          <p className="font-bold">Brand Identity & Strategy</p>
-          <p className="w-[90%] text-sm">
+          <p className="font-bold text-2xl">Brand Identity & Strategy</p>
+          <p className="w-[100%] text-md">
             Craft a strong, memorable brand identity with logos, color palettes,
             and guidelines that align with your business goals.
           </p>
         </div>
-        <div className="bg-primary flex flex-col gap-2 rounded-lg p-5">
+        <div className="bg-primary flex flex-col gap-2 rounded-lg p-5 z-10">
           <div className="flex w-full justify-center rounded-lg border-6 border-[#FCEFFF] bg-white">
             <Image
               src={designImg}
@@ -71,8 +79,8 @@ export default function Page() {
               className="h-80"
             />
           </div>
-          <p className="font-bold">UI/UX Design</p>
-          <p className="w-[90%] text-sm">
+          <p className="font-bold text-2xl">UI/UX Design</p>
+          <p className="w-[100%] text-md">
             Design seamless, user-friendly digital experiences that engage your
             audience and boost conversions.
           </p>
@@ -87,8 +95,8 @@ export default function Page() {
               className="h-80"
             />
           </div>
-          <p className="font-bold">Website Design & Development</p>
-          <p className="w-[90%] text-sm">
+          <p className="font-bold text-2xl">Website Design & Development</p>
+          <p className="w-[100%] text-md">
             From landing pages to custom websites, we build responsive,
             high-performance sites that bring your ideas to life.
           </p>
@@ -103,8 +111,8 @@ export default function Page() {
               className="h-80"
             />
           </div>
-          <p className="font-bold">Mobile App Development</p>
-          <p className="w-[80%] text-sm">
+          <p className="font-bold text-2xl">Mobile App Development</p>
+          <p className="w-[100%] text-md">
             End-to-end app design and development to deliver intuitive, scalable
             mobile solutions.
           </p>
@@ -119,8 +127,8 @@ export default function Page() {
               className="h-80"
             />
           </div>
-          <p className="font-bold">Desktop Application Development</p>
-          <p className="w-[80%] text-sm">
+          <p className="font-bold text-2xl">Desktop Application Development</p>
+          <p className="w-[100%] text-md">
             We design and build powerful desktop applications for your workflow,
             delivering performance, reliability, and scalability across
             platforms.
@@ -136,8 +144,8 @@ export default function Page() {
               className="h-80"
             />
           </div>
-          <p className="font-bold">Custom Digital Solutions</p>
-          <p className="w-[80%] text-sm">
+          <p className="font-bold text-2xl">Custom Digital Solutions</p>
+          <p className="w-[100%] text-md">
             Tailored software and integrations to meet your unique business
             needs and streamline operations.
           </p>

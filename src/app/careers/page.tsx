@@ -72,12 +72,12 @@ export default function Page() {
       <div className="absolute left-0 blur-xl">
         <LeftVector />
       </div>
-      <div className="absolute right-0 blur-xl">
+      <div className="absolute right-0 blur-xl hidden md:block">
         <RightVector />
       </div>
-      <div className="my-5 flex w-full flex-col items-center gap-5">
-        <h2 className="flex w-200 flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-xl">
-          Join out
+      <div className="my-5 flex w-full flex-col items-center gap-2">
+        <h2 className="flex w-200 flex-wrap items-center justify-center gap-3 text-6xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-3xl">
+          Join our
           <span
             style={{
               background:
@@ -90,7 +90,7 @@ export default function Page() {
             Team
           </span>
         </h2>
-        <p className="text-center font-medium">
+        <p className="text-center font-medium md:text-xl">
           Fill in the form and we will get back to you.
         </p>
       </div>

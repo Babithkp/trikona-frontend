@@ -14,7 +14,7 @@ export default function Card3() {
             height={500}
             src="/Scene-4.gif"
             alt="Discovery and Onboarding"
-            className="w-[95%] rounded-xl"
+            className="w-[95%] rounded-xl h-40 md:h-75"
           />
         </div>
       </div>

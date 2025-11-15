@@ -20,8 +20,8 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full pt-8 max-sm:pt-2">
-      <nav className="flex items-center justify-between rounded-2xl bg-[#8E8E8E1A] pr-8 max-sm:pr-2">
+    <header className="w-full pt-5 max-sm:pt-2">
+      <nav className="flex items-center justify-between rounded-2xl bg-[#8E8E8E1A] pr-8 max-sm:pr-2 py-2">
         <Link href={"/"} className="z-1">
           <Image
             src={logo}
@@ -102,7 +102,7 @@ export default function Header() {
         </ul>
         <Link
           href={"/contactus"}
-          className="z-1 flex w-fit items-center gap-2 rounded-md bg-black px-4 py-2 text-base text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325] max-sm:hidden max-sm:px-1 max-sm:text-xs"
+          className="z-1 flex w-fit items-center gap-2 rounded-md bg-black px-6 py-3 text-base text-white transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#A632F2] hover:to-[#FBA325] max-sm:hidden max-sm:px-1 max-sm:text-xs font-semibold"
         >
           Contact Us
         </Link>

@@ -5,14 +5,14 @@ import React from "react";
 export default function HeroSection() {
   return (
     <section className="relative flex flex-col items-center justify-center gap-16 max-lg:overflow-hidden max-md:py-20">
-      <div className="absolute top-5 left-0 blur-xl max-md:hidden">
+      <div className="absolute top-5 left-0 blur-xl">
         <LeftVector />
       </div>
-      <div className="absolute top-2 right-0 blur-xl max-md:hidden">
+      <div className="absolute top-2 right-0 blur-xl hidden md:block">
         <RightVector />
       </div>
-      <div className="flex flex-col items-center gap-8 pt-30 text-center max-md:pt-0 ">
-        <h1 className="flex w-200 flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-2xl">
+      <div className="flex flex-col items-center gap-4 pt-30 text-center max-md:pt-0 ">
+        <h1 className="flex w-200 flex-wrap items-center justify-center gap-3 text-6xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-5xl">
           Our
           <span
             style={{

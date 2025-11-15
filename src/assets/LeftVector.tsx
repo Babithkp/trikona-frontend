@@ -7,6 +7,7 @@ export default function LeftVector() {
       height="1103"
       viewBox="0 0 908 1103"
       fill="none"
+      className="w-full"
     >
       <g filter="url(#filter0_f_608_28)">
         <path
