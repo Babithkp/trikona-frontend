@@ -12,13 +12,13 @@ export default function HeroSection() {
   const router = useRouter();
   return (
     <section className="relative flex flex-col items-center justify-center gap-16 max-lg:overflow-hidden">
-      <div className="absolute left-0 blur-xl hidden md:block">
+      <div className="absolute left-0 hidden blur-xl md:block">
         <LeftVector />
       </div>
       <div className="absolute right-0 blur-xl">
         <RightVector />
       </div>
-      <div className="flex flex-col items-center gap-5 pt-15 md:pt-30 text-center">
+      <div className="flex flex-col items-center gap-5 pt-15 text-center md:pt-30">
         <h1 className="flex w-200 flex-wrap items-center justify-center gap-3 text-5xl font-bold max-lg:text-4xl max-md:text-3xl max-sm:w-full max-sm:text-3xl">
           Design. Build.
           <span
@@ -42,13 +42,13 @@ export default function HeroSection() {
         <div className="z-1 flex w-full justify-center gap-8">
           <Button
             variant={"outline"}
-            className="cursor-pointer border border-black px-7 hover:bg-black hover:text-white text-xl py-5"
+            className="cursor-pointer border border-black px-7 py-5 text-xl hover:bg-black hover:text-white"
             onClick={() => router.push("/process")}
           >
             Explore
           </Button>
           <Button
-            className="group relative cursor-pointer overflow-hidden rounded-md bg-gradient-to-r from-[#A632F2] to-[#FBA325] px-4 py-5 text-white text-xl"
+            className="group relative cursor-pointer overflow-hidden rounded-md bg-gradient-to-r from-[#A632F2] to-[#FBA325] px-4 py-5 text-xl text-white"
             onClick={() => router.push("/contactus")}
           >
             <span className="relative z-10">Get in touch</span>
@@ -56,31 +56,31 @@ export default function HeroSection() {
           </Button>
         </div>
       </div>
-      <div className="flex w-[80%] flex-wrap items-start justify-between gap-5 px-20 max-lg:w-full max-lg:px-5 max-md:px-0 max-sm:pb-10 max-sm:px-5">
-        <div className="flex w-45 flex-col items-center gap-1 text-center text-lg max-sm:text-sm max-sm:gap-1">
+      <div className="flex w-[80%] flex-wrap items-start justify-between gap-5 px-20 max-lg:w-full max-lg:px-5 max-md:px-0 max-sm:px-5 max-sm:pb-10">
+        <div className="flex w-45 flex-col items-center gap-1 text-center text-lg max-sm:gap-1 max-sm:text-sm">
           <Brain />
-          <p className="font-[600] mt-2">Design That Thinks</p>
+          <p className="mt-2 font-[600]">Design That Thinks</p>
           <p className="text-sm font-light max-sm:text-xs">
             Ideas before interfaces. We solve before we style.
           </p>
         </div>
-        <div className="flex w-45 flex-col items-center gap-1 text-center text-lg max-sm:text-sm max-sm:gap-1">
+        <div className="flex w-45 flex-col items-center gap-1 text-center text-lg max-sm:gap-1 max-sm:text-sm">
           <Finger />
-          <p className="font-[600] mt-2">Tech That Feels</p>
+          <p className="mt-2 font-[600]">Tech That Feels</p>
           <p className="text-sm font-light max-sm:text-xs">
             Interfaces that understand users, not just instruct them.
           </p>
         </div>
-        <div className="flex w-45 flex-col items-center gap-1 text-center text-lg max-sm:text-sm max-sm:gap-1">
+        <div className="flex w-45 flex-col items-center gap-1 text-center text-lg max-sm:gap-1 max-sm:text-sm">
           <Code />
-          <p className="font-[600] mt-2">Code That Clicks</p>
+          <p className="mt-2 font-[600]">Code That Clicks</p>
           <p className="text-sm font-light max-sm:text-xs">
             Structured, scalable, and clean — every line matters.
           </p>
         </div>
-        <div className="flex w-45 flex-col items-center gap-1 text-center text-lg max-sm:text-sm max-sm:gap-1">
+        <div className="flex w-45 flex-col items-center gap-1 text-center text-lg max-sm:gap-1 max-sm:text-sm">
           <Strategy />
-          <p className="font-[600] mt-2">Strategy That Sticks</p>
+          <p className="mt-2 font-[600]">Strategy That Sticks</p>
           <p className="text-sm font-light max-sm:text-xs">
             Clear paths, we map every step from first click to conversion.
           </p>

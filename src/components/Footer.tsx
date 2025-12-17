@@ -14,8 +14,7 @@ export default function Footer() {
       <div className="flex w-full justify-between gap-10 max-lg:flex-col">
         <div className="flex w-55 flex-col gap-2">
           <Image src={logo} alt="logo" width={190} height={100} />
-          <p>#54/24, Nethravathy Extension, K.R Puram, Bengaluru - 560036</p>
-          <div>
+          <div className="flex flex-col gap-1">
             <a href="mailto:buildwithus@trikonatech.com" className="font-semibold">
               buildwithus@trikonatech.com
             </a>
