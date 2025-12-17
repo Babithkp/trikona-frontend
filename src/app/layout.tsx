@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   title: "UI/UX Design, Web & App Development Agency in Bengaluru | Trikona",
   description:
     "Trikona is a Bengaluru-based digital agency specializing in UI/UX design, branding, web & app development, and MVPs for startups and businesses.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 declare global {
