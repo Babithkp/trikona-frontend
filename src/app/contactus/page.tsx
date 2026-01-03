@@ -127,6 +127,7 @@ export default function Page() {
         <textarea
           className="h-30 w-full rounded-md border border-black p-2 px-3 max-lg:w-full"
           placeholder="Message...."
+          {...register("message")}
         />
         <Button
           className="w-full cursor-pointer bg-black p-6 text-base text-white hover:bg-black/80"

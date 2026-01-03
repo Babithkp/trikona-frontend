@@ -65,6 +65,7 @@ export default function Header() {
               Portfolio
             </Link>
           </li>
+          
           <li>
             <Link
               href="/services"
@@ -80,6 +81,23 @@ export default function Header() {
               }}
             >
               Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/blog"
+              style={{
+                background:
+                  pathname === "/blog"
+                    ? "linear-gradient(90.79deg, #A632F2 0.68%, #FBA325 99.34%)"
+                    : "",
+                WebkitBackgroundClip: pathname === "/blog" ? "text" : "",
+                WebkitTextFillColor:
+                  pathname === "/blog" ? "transparent" : "",
+                display: pathname === "/blog" ? "inline-block" : "",
+              }}
+            >
+              Blog
             </Link>
           </li>
           <li>
@@ -177,6 +195,24 @@ export default function Header() {
               }}
             >
               Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={onClose}
+              href="/blog"
+              style={{
+                background:
+                  pathname === "/blog"
+                    ? "linear-gradient(90.79deg, #A632F2 0.68%, #FBA325 99.34%)"
+                    : "",
+                WebkitBackgroundClip: pathname === "/blog" ? "text" : "",
+                WebkitTextFillColor: pathname === "/blog" ? "transparent" : "",
+                display: pathname === "/blog" ? "inline-block" : "",
+                color: "black",
+              }}
+            >
+              Blog
             </Link>
           </li>
           <li>
