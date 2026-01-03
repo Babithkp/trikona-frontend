@@ -6,10 +6,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export default async function BlogPostPage({
-  params,
-}: {
-  params: { slug: string } | Promise<{ slug: string }>;
-}) {
+    params,
+  }: {
+    params: Promise<{ slug: string }>;
+  }) {
   const blogs = await prisma.blog.findMany({
     orderBy: {
       createdAt: "desc",
