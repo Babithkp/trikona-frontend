@@ -71,13 +71,15 @@ export default async function Page() {
           <div className="flex flex-col gap-5">
             {blogs.slice(0, 5).map((blog) => (
               <article className="flex gap-5 max-sm:flex-col" key={blog.id}>
-                <Image
-                  src={blog.imageUrl}
-                  alt={blog.title}
-                  width={300}
-                  height={150}
-                  className="rounded-xl max-sm:w-full"
-                />
+                {blog.imageUrl && (
+                  <Image
+                    src={blog.imageUrl}
+                    alt={blog.title}
+                    width={300}
+                    height={150}
+                    className="rounded-xl max-sm:w-full"
+                  />
+                )}
                 <div className="flex flex-col justify-between max-sm:gap-2">
                   <div className="flex flex-col gap-2">
                     <p className="font-bold">{blog.title}</p>
@@ -106,13 +108,15 @@ export default async function Page() {
           <div className="flex flex-col gap-5">
             {blogs.slice(0, 2).map((blog) => (
               <article className="flex flex-col gap-5" key={blog.id}>
-                <Image
-                  src={blog.imageUrl}
-                  alt={blog.title}
-                  width={1000}
-                  height={150}
-                  className="w-[90%] rounded-xl max-lg:w-full"
-                />
+                {blog.imageUrl && (
+                  <Image
+                    src={blog.imageUrl}
+                    alt={blog.title}
+                    width={1000}
+                    height={150}
+                    className="w-[90%] rounded-xl max-lg:w-full"
+                  />
+                )}
                 <div className="flex flex-col justify-between gap-2">
                   <p className="font-bold">{blog.title}</p>
                   <p className="text-sm">{blog.description}</p>
@@ -143,13 +147,15 @@ export default async function Page() {
         <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1">
           {blogs.map((blog) => (
             <Link className="flex flex-col gap-5" key={blog.id} href={`/blog/${blog.slug}`}>
-              <Image
-                src={blog.imageUrl}
-                alt={blog.title}
-                width={500}
-                height={150}
-                className="rounded-xl"
-              />
+              {blog.imageUrl && (
+                <Image
+                  src={blog.imageUrl}
+                  alt={blog.title}
+                  width={500}
+                  height={150}
+                  className="rounded-xl"
+                />
+              )}
               <div className="flex flex-col justify-between gap-2">
                 <p className="font-bold">{blog.title}</p>
                 <p className="text-sm">{blog.description}</p>

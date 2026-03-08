@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ToastContainer } from "react-toastify";
 import Script from "next/script";
-
-const interSans = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
@@ -71,7 +65,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="flex justify-center scroll-smooth bg-[#F5F5F5]">
       <body
-        className={`${interSans.variable} max-w-[1520px] bg-[#F5F5F5] px-5 antialiased max-lg:px-0`}
+        className="max-w-[1520px] bg-[#F5F5F5] px-5 antialiased max-lg:px-0"
       >
         <h1 className="sr-only">
           Digital Agency for UI/UX Design, Web & App Development
@@ -105,3 +99,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+
