@@ -1,35 +1,30 @@
-"use client";
 import Fluent from "@/assets/Fluent";
 import LeftVector from "@/assets/LeftVector";
 import RightVector from "@/assets/RightVector";
 import Trend from "@/assets/Trend";
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import prisma from "@/lib/prisma";
 import { ArrowUpRight } from "lucide-react";
-import axios from "axios";
-import { useRouter } from "next/navigation";
-export interface Blog {
-  id: string;
-  title: string;
-  slug: string;
-  description: string;
-  readMin: number;
-  content: string;
-  imageUrl: string;
-}
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 
-export default function Page() {
-  const [blogs, setBlogs] = useState<Blog[]>([]);
-  const router = useRouter();
-  const fetchBlogs = async () => {
-    const res = await axios.get("/api/blog");
-    setBlogs(res.data);
-  };
+export const metadata: Metadata = {
+  title: "Trikona Blog | UI/UX, Web Development & Product Insights",
+  description:
+    "Read Trikona insights on UI/UX design, product strategy, web development, and startup MVP execution.",
+  alternates: {
+    canonical: "/blog",
+  },
+};
 
-  useEffect(() => {
-    fetchBlogs();
-  }, []);
+export default async function Page() {
+  const blogs = await prisma.blog.findMany({
+    orderBy: {
+      createdAt: "desc",
+    },
+  });
+
   return (
     <>
       <section className="relative flex flex-col items-center justify-center gap-16 py-40 max-lg:overflow-hidden">
@@ -74,11 +69,11 @@ export default function Page() {
             Recent Posts
           </h2>
           <div className="flex flex-col gap-5">
-            {blogs.slice(0, 5).map((blog, i) => (
-              <div className="flex gap-5 max-sm:flex-col" key={i}>
+            {blogs.slice(0, 5).map((blog) => (
+              <article className="flex gap-5 max-sm:flex-col" key={blog.id}>
                 <Image
                   src={blog.imageUrl}
-                  alt="image"
+                  alt={blog.title}
                   width={300}
                   height={150}
                   className="rounded-xl max-sm:w-full"
@@ -88,13 +83,14 @@ export default function Page() {
                     <p className="font-bold">{blog.title}</p>
                     <p className="text-sm">{blog.description}</p>
                   </div>
-                  <button className="w-fit cursor-pointer pb-5 text-sm z-1"
-                  onClick={() => router.push(`/blog/${blog.slug}`)}
+                  <Link
+                    className="z-1 w-fit cursor-pointer pb-5 text-sm"
+                    href={`/blog/${blog.slug}`}
                   >
                     Read More
-                  </button>
+                  </Link>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
@@ -108,11 +104,11 @@ export default function Page() {
           </div>
 
           <div className="flex flex-col gap-5">
-            {blogs.slice(0, 2).map((blog, i) => (
-              <div className="flex flex-col gap-5" key={i}>
+            {blogs.slice(0, 2).map((blog) => (
+              <article className="flex flex-col gap-5" key={blog.id}>
                 <Image
                   src={blog.imageUrl}
-                  alt="image"
+                  alt={blog.title}
                   width={1000}
                   height={150}
                   className="w-[90%] rounded-xl max-lg:w-full"
@@ -121,13 +117,15 @@ export default function Page() {
                   <p className="font-bold">{blog.title}</p>
                   <p className="text-sm">{blog.description}</p>
                   <Button
+                    asChild
                     className="w-fit cursor-pointer rounded-2xl bg-black text-sm hover:scale-105 hover:bg-black/70"
-                    onClick={() => router.push(`/blog/${blog.slug}`)}
                   >
-                    Blog now <ArrowUpRight />
+                    <Link href={`/blog/${blog.slug}`}>
+                      Blog now <ArrowUpRight />
+                    </Link>
                   </Button>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
@@ -143,11 +141,11 @@ export default function Page() {
           All blogs
         </h2>
         <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1">
-          {blogs.map((blog, i) => (
-            <div className="flex flex-col gap-5 cursor-pointer" key={i} onClick={() => router.push(`/blog/${blog.slug}`)}>
+          {blogs.map((blog) => (
+            <Link className="flex flex-col gap-5" key={blog.id} href={`/blog/${blog.slug}`}>
               <Image
                 src={blog.imageUrl}
-                alt="image"
+                alt={blog.title}
                 width={500}
                 height={150}
                 className="rounded-xl"
@@ -156,7 +154,7 @@ export default function Page() {
                 <p className="font-bold">{blog.title}</p>
                 <p className="text-sm">{blog.description}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

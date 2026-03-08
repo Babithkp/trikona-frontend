@@ -11,10 +11,30 @@ const interSans = Inter({
   variable: "--font-inter",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "UI/UX Design, Web & App Development Agency in Bengaluru | Trikona",
   description:
     "Trikona is a Bengaluru-based digital agency specializing in UI/UX design, branding, web & app development, and MVPs for startups and businesses.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    title: "UI/UX Design, Web & App Development Agency in Bengaluru | Trikona",
+    description:
+      "Trikona is a Bengaluru-based digital agency specializing in UI/UX design, branding, web & app development, and MVPs for startups and businesses.",
+    siteName: "Trikona",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UI/UX Design, Web & App Development Agency in Bengaluru | Trikona",
+    description:
+      "Trikona is a Bengaluru-based digital agency specializing in UI/UX design, branding, web & app development, and MVPs for startups and businesses.",
+  },
   icons: {
     icon: "/favicon.ico",
   },
@@ -26,6 +46,22 @@ declare global {
     gtag: (...args: unknown[]) => void;
   }
 }
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Trikona",
+  url: siteUrl,
+  logo: `${siteUrl}/Logo_white.png`,
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Trikona",
+  url: siteUrl,
+  inLanguage: "en",
+};
 
 export default function RootLayout({
   children,
@@ -40,6 +76,16 @@ export default function RootLayout({
         <h1 className="sr-only">
           Digital Agency for UI/UX Design, Web & App Development
         </h1>
+        <Script
+          id="ld-org"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <Script
+          id="ld-website"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         <ToastContainer />
         <Header />
         {children}
