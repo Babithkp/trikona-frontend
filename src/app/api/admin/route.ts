@@ -1,7 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import prisma from "@/lib/prisma";
 import jwt from "jsonwebtoken";
-import bcrypt from "bcryptjs";
 
 export async function POST(request: NextRequest) {
   const jwtSecret = process.env.JWT_SECRET;
@@ -13,23 +12,16 @@ export async function POST(request: NextRequest) {
   }
 
   const { username, password } = await request.json();
-  if (typeof username !== "string" || typeof password !== "string") {
-    return NextResponse.json(
-      { message: "Invalid request payload." },
-      { status: 400 }
-    );
-  }
 
   const admin = await prisma.admin.findUnique({
-    where: { username: username.trim() },
+    where: {
+      username,
+      password
+    },
   });
 
-  if (!admin) {
-    return NextResponse.json({ message: "Wrong Credentials" }, { status: 401 });
-  }
 
-  const isPasswordValid = await bcrypt.compare(password, admin.password);
-  if (!isPasswordValid) {
+  if (!admin) {
     return NextResponse.json({ message: "Wrong Credentials" }, { status: 401 });
   }
 
